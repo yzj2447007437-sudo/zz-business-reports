@@ -1,118 +1,13 @@
 {
+  "base_url": "https://yzj2447007437-sudo.github.io/zz-business-reports/debt-evening/latest",
   "platform": "GitHub Pages",
-  "source_dir": "/Users/youzijian/Documents/Codex/2026-06-22/codex-codex/work/zz_daily_deploy",
-  "repo": "zz-business-reports",
+  "repo": "yzj2447007437-sudo/zz-business-reports",
+  "branch": "gh-pages",
   "subdir": "debt-evening/latest",
-  "visibility": "private",
-  "deployed_at": "2026-06-24T23:56:16.197693+08:00",
-  "gh": "/opt/homebrew/bin/gh",
-  "git": "/opt/homebrew/bin/git",
-  "auth_status": {
-    "cmd": [
-      "/opt/homebrew/bin/gh",
-      "auth",
-      "status"
-    ],
-    "cwd": "",
-    "stdout": "github.com\n  ✓ Logged in to github.com account yzj2447007437-sudo (keyring)\n  - Active account: true\n  - Git operations protocol: https\n  - Token: gho_************************************\n  - Token scopes: 'gist', 'read:org', 'repo'\n",
-    "stderr": "",
-    "returncode": 0
-  },
-  "user": {
-    "cmd": [
-      "/opt/homebrew/bin/gh",
-      "api",
-      "user",
-      "--jq",
-      ".login"
-    ],
-    "cwd": "",
-    "stdout": "yzj2447007437-sudo\n",
-    "stderr": "",
-    "returncode": 0
-  },
-  "owner": "yzj2447007437-sudo",
-  "full_repo": "yzj2447007437-sudo/zz-business-reports",
-  "repo_view_before": {
-    "cmd": [
-      "/opt/homebrew/bin/gh",
-      "repo",
-      "view",
-      "yzj2447007437-sudo/zz-business-reports",
-      "--json",
-      "nameWithOwner,visibility"
-    ],
-    "cwd": "",
-    "stdout": "{\"nameWithOwner\":\"yzj2447007437-sudo/zz-business-reports\",\"visibility\":\"PUBLIC\"}\n",
-    "stderr": "",
-    "returncode": 0
-  },
-  "clone_gh_pages": {
-    "cmd": [
-      "/opt/homebrew/bin/git",
-      "clone",
-      "--branch",
-      "gh-pages",
-      "https://github.com/yzj2447007437-sudo/zz-business-reports.git",
-      "/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-vgwaikqy"
-    ],
-    "cwd": "",
-    "stdout": "",
-    "stderr": "Cloning into '/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-vgwaikqy'...\n",
-    "returncode": 0
-  },
-  "git_add": {
-    "cmd": [
-      "/opt/homebrew/bin/git",
-      "add",
-      "-A"
-    ],
-    "cwd": "/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-vgwaikqy",
-    "stdout": "",
-    "stderr": "",
-    "returncode": 0
-  },
-  "git_commit": {
-    "cmd": [
-      "/opt/homebrew/bin/git",
-      "commit",
-      "-m",
-      "Publish debt-evening/latest"
-    ],
-    "cwd": "/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-vgwaikqy",
-    "stdout": "[gh-pages 89a7945] Publish debt-evening/latest\n Committer: 尤子健 <youzijian@youzijiandeMacBook-Pro.local>\nYour name and email address were configured automatically based\non your username and hostname. Please check that they are accurate.\nYou can suppress this message by setting them explicitly:\n\n    git config --global user.name \"Your Name\"\n    git config --global user.email you@example.com\n\nAfter doing this, you may fix the identity used for this commit with:\n\n    git commit --amend --reset-author\n\n 1 file changed, 9 insertions(+), 88 deletions(-)\n",
-    "stderr": "",
-    "returncode": 0
-  },
-  "git_push": {
-    "cmd": [
-      "/opt/homebrew/bin/git",
-      "push",
-      "origin",
-      "gh-pages"
-    ],
-    "cwd": "/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-vgwaikqy",
-    "stdout": "",
-    "stderr": "To https://github.com/yzj2447007437-sudo/zz-business-reports.git\n   d261e97..89a7945  gh-pages -> gh-pages\n",
-    "returncode": 0
-  },
-  "pages_enable": {
-    "cmd": [
-      "/opt/homebrew/bin/gh",
-      "api",
-      "-X",
-      "POST",
-      "repos/yzj2447007437-sudo/zz-business-reports/pages",
-      "-f",
-      "source[branch]=gh-pages",
-      "-f",
-      "source[path]=/"
-    ],
-    "cwd": "",
-    "stdout": "{\"message\":\"GitHub Pages is already enabled.\",\"documentation_url\":\"https://docs.github.com/rest/pages/pages#create-a-apiname-pages-site\",\"status\":\"409\"}",
-    "stderr": "gh: GitHub Pages is already enabled. (HTTP 409)\n",
-    "returncode": 1
-  },
-  "status": "failed",
-  "reason": "GitHub Pages 启用失败；当前账号/仓库计划可能不支持 private Pages"
+  "deployed_at": "2026-06-24T23:56:48.808405+08:00",
+  "area-1.html": "https://yzj2447007437-sudo.github.io/zz-business-reports/debt-evening/latest/area-1.html",
+  "area-2.html": "https://yzj2447007437-sudo.github.io/zz-business-reports/debt-evening/latest/area-2.html",
+  "area-3.html": "https://yzj2447007437-sudo.github.io/zz-business-reports/debt-evening/latest/area-3.html",
+  "area-4.html": "https://yzj2447007437-sudo.github.io/zz-business-reports/debt-evening/latest/area-4.html",
+  "index.html": "https://yzj2447007437-sudo.github.io/zz-business-reports/debt-evening/latest/index.html"
 }
