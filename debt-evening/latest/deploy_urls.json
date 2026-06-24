@@ -1,0 +1,92 @@
+{
+  "platform": "GitHub Pages",
+  "source_dir": "/Users/youzijian/Documents/Codex/2026-06-22/codex-codex/work/zz_daily_deploy",
+  "repo": "zz-business-reports",
+  "subdir": "debt-evening/latest",
+  "visibility": "private",
+  "deployed_at": "2026-06-24T23:53:31.131694+08:00",
+  "gh": "/opt/homebrew/bin/gh",
+  "git": "/opt/homebrew/bin/git",
+  "auth_status": {
+    "cmd": [
+      "/opt/homebrew/bin/gh",
+      "auth",
+      "status"
+    ],
+    "cwd": "",
+    "stdout": "github.com\n  ✓ Logged in to github.com account yzj2447007437-sudo (keyring)\n  - Active account: true\n  - Git operations protocol: https\n  - Token: gho_************************************\n  - Token scopes: 'gist', 'read:org', 'repo'\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  "user": {
+    "cmd": [
+      "/opt/homebrew/bin/gh",
+      "api",
+      "user",
+      "--jq",
+      ".login"
+    ],
+    "cwd": "",
+    "stdout": "yzj2447007437-sudo\n",
+    "stderr": "",
+    "returncode": 0
+  },
+  "owner": "yzj2447007437-sudo",
+  "full_repo": "yzj2447007437-sudo/zz-business-reports",
+  "repo_view_before": {
+    "cmd": [
+      "/opt/homebrew/bin/gh",
+      "repo",
+      "view",
+      "yzj2447007437-sudo/zz-business-reports",
+      "--json",
+      "nameWithOwner,visibility"
+    ],
+    "cwd": "",
+    "stdout": "",
+    "stderr": "GraphQL: Could not resolve to a Repository with the name 'yzj2447007437-sudo/zz-business-reports'. (repository)\n",
+    "returncode": 1
+  },
+  "repo_create": {
+    "cmd": [
+      "/opt/homebrew/bin/gh",
+      "repo",
+      "create",
+      "yzj2447007437-sudo/zz-business-reports",
+      "--private",
+      "--confirm"
+    ],
+    "cwd": "",
+    "stdout": "https://github.com/yzj2447007437-sudo/zz-business-reports\n",
+    "stderr": "Flag --confirm has been deprecated, Pass any argument to skip confirmation prompt\n",
+    "returncode": 0
+  },
+  "clone_gh_pages": {
+    "cmd": [
+      "/opt/homebrew/bin/git",
+      "clone",
+      "--branch",
+      "gh-pages",
+      "https://github.com/yzj2447007437-sudo/zz-business-reports.git",
+      "/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-jar63_aa"
+    ],
+    "cwd": "",
+    "stdout": "",
+    "stderr": "Cloning into '/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-jar63_aa'...\nfatal: could not read Username for 'https://github.com': Device not configured\n",
+    "returncode": 128
+  },
+  "clone_default": {
+    "cmd": [
+      "/opt/homebrew/bin/git",
+      "clone",
+      "https://github.com/yzj2447007437-sudo/zz-business-reports.git",
+      "/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-jar63_aa"
+    ],
+    "cwd": "",
+    "stdout": "",
+    "stderr": "Cloning into '/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-jar63_aa'...\nfatal: could not read Username for 'https://github.com': Device not configured\n",
+    "returncode": 128
+  },
+  "status": "failed",
+  "reason": "克隆 GitHub 仓库失败"
+}
