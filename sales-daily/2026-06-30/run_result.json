@@ -1,0 +1,881 @@
+{
+  "date": "2026-06-30",
+  "window": {
+    "t0": 1782748800000,
+    "t1": 1782835200000
+  },
+  "status": "success",
+  "failure": null,
+  "summary": {
+    "谷昊南": {
+      "records": 0,
+      "amount": 0
+    },
+    "刘壮": {
+      "records": 6,
+      "amount": 22500.0
+    },
+    "黄洋": {
+      "records": 4,
+      "amount": 33000.0
+    },
+    "张迎祥": {
+      "records": 6,
+      "amount": 0.0
+    }
+  },
+  "deploy": {
+    "platform": "GitHub Pages",
+    "deployed_at": "2026-06-30T21:56:06.143871+08:00",
+    "deploy": {
+      "cmd": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/youzijian/Documents/Codex/2026-06-22/codex-codex/work/scripts/publish_github_pages.py",
+        "--source-dir",
+        "/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/2026-06-30",
+        "--repo",
+        "zz-business-reports",
+        "--subdir",
+        "sales-daily/2026-06-30",
+        "--output-json",
+        "/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/2026-06-30/deploy_urls.json",
+        "--url-file",
+        "/tmp/zz_sales_daily_public_url.txt"
+      ],
+      "stdout": "{\n  \"platform\": \"GitHub Pages\",\n  \"source_dir\": \"/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/2026-06-30\",\n  \"repo\": \"zz-business-reports\",\n  \"subdir\": \"sales-daily/2026-06-30\",\n  \"visibility\": \"private\",\n  \"deployed_at\": \"2026-06-30T21:56:06.184179+08:00\",\n  \"gh\": \"/opt/homebrew/bin/gh\",\n  \"git\": \"/Users/youzijian/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/git\",\n  \"auth_status\": {\n    \"cmd\": [\n      \"/opt/homebrew/bin/gh\",\n      \"auth\",\n      \"status\"\n    ],\n    \"cwd\": \"\",\n    \"stdout\": \"github.com\\n  ✓ Logged in to github.com account yzj2447007437-sudo (keyring)\\n  - Active account: true\\n  - Git operations protocol: https\\n  - Token: gho_************************************\\n  - Token scopes: 'gist', 'read:org', 'repo', 'workflow'\\n\",\n    \"stderr\": \"\",\n    \"returncode\": 0\n  },\n  \"user\": {\n    \"cmd\": [\n      \"/opt/homebrew/bin/gh\",\n      \"api\",\n      \"user\",\n      \"--jq\",\n      \".login\"\n    ],\n    \"cwd\": \"\",\n    \"stdout\": \"yzj2447007437-sudo\\n\",\n    \"stderr\": \"\",\n    \"returncode\": 0\n  },\n  \"owner\": \"yzj2447007437-sudo\",\n  \"full_repo\": \"yzj2447007437-sudo/zz-business-reports\",\n  \"repo_view_before\": {\n    \"cmd\": [\n      \"/opt/homebrew/bin/gh\",\n      \"repo\",\n      \"view\",\n      \"yzj2447007437-sudo/zz-business-reports\",\n      \"--json\",\n      \"nameWithOwner,visibility\"\n    ],\n    \"cwd\": \"\",\n    \"stdout\": \"{\\\"nameWithOwner\\\":\\\"yzj2447007437-sudo/zz-business-reports\\\",\\\"visibility\\\":\\\"PUBLIC\\\"}\\n\",\n    \"stderr\": \"\",\n    \"returncode\": 0\n  },\n  \"clone_gh_pages\": {\n    \"cmd\": [\n      \"/Users/youzijian/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/git\",\n      \"clone\",\n      \"--branch\",\n      \"gh-pages\",\n      \"https://github.com/yzj2447007437-sudo/zz-business-reports.git\",\n      \"/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-b7x9zg7v\"\n    ],\n    \"cwd\": \"\",\n    \"stdout\": \"\",\n    \"stderr\": \"Cloning into '/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-b7x9zg7v'...\\n\",\n    \"returncode\": 0\n  },\n  \"git_add\": {\n    \"cmd\": [\n      \"/Users/youzijian/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/git\",\n      \"add\",\n      \"-A\"\n    ],\n    \"cwd\": \"/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-b7x9zg7v\",\n    \"stdout\": \"\",\n    \"stderr\": \"\",\n    \"returncode\": 0\n  },\n  \"git_commit\": {\n    \"cmd\": [\n      \"/Users/youzijian/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/git\",\n      \"commit\",\n      \"-m\",\n      \"Publish sales-daily/2026-06-30\"\n    ],\n    \"cwd\": \"/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-b7x9zg7v\",\n    \"stdout\": \"[gh-pages 9c0eaa4] Publish sales-daily/2026-06-30\\n Committer: 尤子健 <youzijian@youzijiandeMacBook-Pro.local>\\nYour name and email address were configured automatically based\\non your username and hostname. Please check that they are accurate.\\nYou can suppress this message by setting them explicitly:\\n\\n    git config --global user.name \\\"Your Name\\\"\\n    git config --global user.email you@example.com\\n\\nAfter doing this, you may fix the identity used for this commit with:\\n\\n    git commit --amend --reset-author\\n\\n 2 files changed, 51 insertions(+)\\n create mode 100644 sales-daily/2026-06-30/deploy_raw.json\\n create mode 100644 sales-daily/2026-06-30/deploy_urls.json\\n\",\n    \"stderr\": \"\",\n    \"returncode\": 0\n  },\n  \"git_push\": {\n    \"cmd\": [\n      \"/Users/youzijian/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/git\",\n      \"push\",\n      \"origin\",\n      \"gh-pages\"\n    ],\n    \"cwd\": \"/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-b7x9zg7v\",\n    \"stdout\": \"\",\n    \"stderr\": \"To https://github.com/yzj2447007437-sudo/zz-business-reports.git\\n   0dfe2f4..9c0eaa4  gh-pages -> gh-pages\\n\",\n    \"returncode\": 0\n  },\n  \"pages_enable\": {\n    \"cmd\": [\n      \"/opt/homebrew/bin/gh\",\n      \"api\",\n      \"-X\",\n      \"POST\",\n      \"repos/yzj2447007437-sudo/zz-business-reports/pages\",\n      \"-f\",\n      \"source[branch]=gh-pages\",\n      \"-f\",\n      \"source[path]=/\"\n    ],\n    \"cwd\": \"\",\n    \"stdout\": \"{\\\"message\\\":\\\"GitHub Pages is already enabled.\\\",\\\"documentation_url\\\":\\\"https://docs.github.com/rest/pages/pages#create-a-apiname-pages-site\\\",\\\"status\\\":\\\"409\\\"}\",\n    \"stderr\": \"gh: GitHub Pages is already enabled. (HTTP 409)\\n\",\n    \"returncode\": 1\n  },\n  \"status\": \"success\",\n  \"base_url\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30\",\n  \"urls\": {\n    \"base_url\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30\",\n    \"platform\": \"GitHub Pages\",\n    \"repo\": \"yzj2447007437-sudo/zz-business-reports\",\n    \"branch\": \"gh-pages\",\n    \"subdir\": \"sales-daily/2026-06-30\",\n    \"deployed_at\": \"2026-06-30T21:56:06.184179+08:00\",\n    \"刘壮_2026-06-30_客户跟进方案.html\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/刘壮_2026-06-30_客户跟进方案.html\",\n    \"刘壮\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/刘壮_2026-06-30_客户跟进方案.html\",\n    \"张迎祥_2026-06-30_客户跟进方案.html\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/张迎祥_2026-06-30_客户跟进方案.html\",\n    \"张迎祥\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/张迎祥_2026-06-30_客户跟进方案.html\",\n    \"谷昊南_2026-06-30_客户跟进方案.html\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/谷昊南_2026-06-30_客户跟进方案.html\",\n    \"谷昊南\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/谷昊南_2026-06-30_客户跟进方案.html\",\n    \"黄洋_2026-06-30_客户跟进方案.html\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/黄洋_2026-06-30_客户跟进方案.html\",\n    \"黄洋\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/黄洋_2026-06-30_客户跟进方案.html\"\n  }\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    "status": "success",
+    "base_url": "https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30",
+    "urls": {
+      "base_url": "https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30",
+      "platform": "GitHub Pages",
+      "deployed_at": "2026-06-30T21:56:06.184179+08:00",
+      "谷昊南_2026-06-30_客户跟进方案.html": "https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/%E8%B0%B7%E6%98%8A%E5%8D%97_2026-06-30_%E5%AE%A2%E6%88%B7%E8%B7%9F%E8%BF%9B%E6%96%B9%E6%A1%88.html",
+      "谷昊南": "https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/%E8%B0%B7%E6%98%8A%E5%8D%97_2026-06-30_%E5%AE%A2%E6%88%B7%E8%B7%9F%E8%BF%9B%E6%96%B9%E6%A1%88.html",
+      "刘壮_2026-06-30_客户跟进方案.html": "https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/%E5%88%98%E5%A3%AE_2026-06-30_%E5%AE%A2%E6%88%B7%E8%B7%9F%E8%BF%9B%E6%96%B9%E6%A1%88.html",
+      "刘壮": "https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/%E5%88%98%E5%A3%AE_2026-06-30_%E5%AE%A2%E6%88%B7%E8%B7%9F%E8%BF%9B%E6%96%B9%E6%A1%88.html",
+      "黄洋_2026-06-30_客户跟进方案.html": "https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/%E9%BB%84%E6%B4%8B_2026-06-30_%E5%AE%A2%E6%88%B7%E8%B7%9F%E8%BF%9B%E6%96%B9%E6%A1%88.html",
+      "黄洋": "https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/%E9%BB%84%E6%B4%8B_2026-06-30_%E5%AE%A2%E6%88%B7%E8%B7%9F%E8%BF%9B%E6%96%B9%E6%A1%88.html",
+      "张迎祥_2026-06-30_客户跟进方案.html": "https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/%E5%BC%A0%E8%BF%8E%E7%A5%A5_2026-06-30_%E5%AE%A2%E6%88%B7%E8%B7%9F%E8%BF%9B%E6%96%B9%E6%A1%88.html",
+      "张迎祥": "https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/%E5%BC%A0%E8%BF%8E%E7%A5%A5_2026-06-30_%E5%AE%A2%E6%88%B7%E8%B7%9F%E8%BF%9B%E6%96%B9%E6%A1%88.html"
+    }
+  },
+  "todo": {
+    "status": "success",
+    "results": [
+      {
+        "cmd": [
+          "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+          "todo",
+          "task",
+          "create",
+          "--title",
+          "谷昊南：补填2026-06-30 CRM跟进记录",
+          "--executors",
+          "17512563908773511",
+          "--priority",
+          "30",
+          "--due",
+          "2026-06-30T18:00:00+08:00",
+          "--format",
+          "json"
+        ],
+        "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"谷昊南：补填2026-06-30 CRM跟进记录\",\n    \"taskId\": \"54667058678\"\n  },\n  \"success\": true\n}\n",
+        "stderr": "",
+        "returncode": 0,
+        "todo": {
+          "owner": "谷昊南",
+          "userId": "17512563908773511",
+          "title": "谷昊南：补填2026-06-30 CRM跟进记录",
+          "due": "2026-06-30T18:00:00+08:00",
+          "priority": "30"
+        }
+      },
+      {
+        "cmd": [
+          "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+          "todo",
+          "task",
+          "create",
+          "--title",
+          "刘壮：跟进王洪秋、刘于漫重点客户（¥20,000）",
+          "--executors",
+          "16255298572921921",
+          "--priority",
+          "40",
+          "--due",
+          "2026-06-30T18:00:00+08:00",
+          "--format",
+          "json"
+        ],
+        "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"刘壮：跟进王洪秋、刘于漫重点客户（¥20,000）\",\n    \"taskId\": \"54666994798\"\n  },\n  \"success\": true\n}\n",
+        "stderr": "",
+        "returncode": 0,
+        "todo": {
+          "owner": "刘壮",
+          "userId": "16255298572921921",
+          "title": "刘壮：跟进王洪秋、刘于漫重点客户（¥20,000）",
+          "due": "2026-06-30T18:00:00+08:00",
+          "priority": "40",
+          "action": "{'markdown': '老师要测水解氨基酸和总淀粉含量，老师要求把价格降一些，还未报价。\\n'}；{'markdown': '基因合成已经安排合成，安排一条合成0.45元合成，之前是在生工合成的。\\n'}"
+        }
+      },
+      {
+        "cmd": [
+          "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+          "todo",
+          "task",
+          "create",
+          "--title",
+          "黄洋：跟进岳毅、张易南重点客户（¥31,000）",
+          "--executors",
+          "17031190675928446",
+          "--priority",
+          "40",
+          "--due",
+          "2026-06-30T18:00:00+08:00",
+          "--format",
+          "json"
+        ],
+        "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"黄洋：跟进岳毅、张易南重点客户（¥31,000）\",\n    \"taskId\": \"54801396933\"\n  },\n  \"success\": true\n}\n",
+        "stderr": "",
+        "returncode": 0,
+        "todo": {
+          "owner": "黄洋",
+          "userId": "17031190675928446",
+          "title": "黄洋：跟进岳毅、张易南重点客户（¥31,000）",
+          "due": "2026-06-30T18:00:00+08:00",
+          "priority": "40",
+          "action": "{'markdown': '跟进单细胞测序，空转，等样本好了联系取样，现在还没有开始造模\\n'}；{'markdown': '跟进cut-tag,这个因为之前是在景杰做的，因为需要一起分析，跟老板沟通了，这个课题还是决定在景杰做，后面再有需要可以在擎科做试试"
+        }
+      },
+      {
+        "cmd": [
+          "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+          "todo",
+          "task",
+          "create",
+          "--title",
+          "张迎祥：跟进金尚伟、陈萌萌重点客户（¥0）",
+          "--executors",
+          "216932301824574583",
+          "--priority",
+          "30",
+          "--due",
+          "2026-06-30T18:00:00+08:00",
+          "--format",
+          "json"
+        ],
+        "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"张迎祥：跟进金尚伟、陈萌萌重点客户（¥0）\",\n    \"taskId\": \"54801496592\"\n  },\n  \"success\": true\n}\n",
+        "stderr": "",
+        "returncode": 0,
+        "todo": {
+          "owner": "张迎祥",
+          "userId": "216932301824574583",
+          "title": "张迎祥：跟进金尚伟、陈萌萌重点客户（¥0）",
+          "due": "2026-06-30T18:00:00+08:00",
+          "priority": "30",
+          "action": "{'markdown': '质粒构建项目，需要pcdna3.4，把载体表发给他了，他考虑一下。\\n'}；{'markdown': '发酵菌液转录组代谢组沟通，目前考虑了一下决定先做代谢组，九个样品。今天催单，今天尽快下单\\n'}"
+        }
+      }
+    ]
+  },
+  "dingtalk": {
+    "returncode": 0,
+    "stdout": "{\"errcode\":0,\"errmsg\":\"ok\"}",
+    "stderr": "",
+    "note": "resent with percent-encoded GitHub Pages URLs"
+  },
+  "steps": [
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "base",
+        "get",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--format",
+        "json"
+      ],
+      "stdout": "{\n  \"data\": {\n    \"baseId\": \"AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\",\n    \"baseName\": \"陕豫渝鄂基地CRM客户管理系统\",\n    \"dashboards\": [\n      {\n        \"chartCount\": 13,\n        \"dashboardId\": \"dashboard-1YJooFN2AEQ1NmCG0XfUg\",\n        \"dashboardName\": \"各基地每日日报数量统计图表\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 12,\n        \"dashboardId\": \"dashboard-KcvDq1v26h7EholtWKHyq\",\n        \"dashboardName\": \"各基地客户数量统计\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 19,\n        \"dashboardId\": \"cPxGvX3CO6JTXE2uhhj9c\",\n        \"dashboardName\": \"郑州基地销售跟进仪表盘\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 24,\n        \"dashboardId\": \"dashboard-gJr4SQbKocE4JUqiFAyj7\",\n        \"dashboardName\": \"西安基地销售跟进仪表盘\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 20,\n        \"dashboardId\": \"dashboard-XEtpxBfCxy5ygtcfMoHt7\",\n        \"dashboardName\": \"武汉基地销售跟进仪表盘\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 12,\n        \"dashboardId\": \"dashboard-OyN91q9DijvTxzPSLMtJT\",\n        \"dashboardName\": \"重庆基地销售跟进仪表盘\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 0,\n        \"dashboardId\": \"dashboard-NlTIvJNS5kpwho8pLcRWW\",\n        \"dashboardName\": \"仪表盘\",\n        \"meta\": {}\n      }\n    ],\n    \"documents\": [\n      {\n        \"documentId\": \"Y1OQX0akWm344LyMiYbk0a6BJGlDd3mE\",\n        \"documentName\": \"快速上手客户管理系统\"\n      }\n    ],\n    \"tables\": [\n      {\n        \"tableId\": \"uiEuhvv\",\n        \"tableName\": \"西安基地课题组消费明细 (2026.5月)\"\n      },\n      {\n        \"tableId\": \"dv19yqvsgs3oebp3pcjys\",\n        \"tableName\": \"西安基地客户CRM（日报更新）\"\n      },\n      {\n        \"tableId\": \"c3sqzs9v7ll1c720crna8\",\n        \"tableName\": \"📝客户跟进记录（西安）\"\n      },\n      {\n        \"tableId\": \"qGJsTRG\",\n        \"tableName\": \"武汉基地课题组消费明细（2025年全年）\"\n      },\n      {\n        \"tableId\": \"E1GyUKu\",\n        \"tableName\": \"武汉基地客户CRM（日报更新）\"\n      },\n      {\n        \"tableId\": \"qSbB4tu\",\n        \"tableName\": \"📝客户跟进记录 (武汉)\"\n      },\n      {\n        \"tableId\": \"r6MtTh1\",\n        \"tableName\": \"重庆基地课题组消费明细（2026年1-5月）\"\n      },\n      {\n        \"tableId\": \"5N3Naat\",\n        \"tableName\": \"重庆基地客户CRM（日报更新）\"\n      },\n      {\n        \"tableId\": \"HPxrqtq\",\n        \"tableName\": \"📝客户跟进记录 (重庆)\"\n      },\n      {\n        \"tableId\": \"qH4EiYm\",\n        \"tableName\": \"郑州基地课题组消费明细（2026.5月）\"\n      },\n      {\n        \"tableId\": \"LOVz6n3\",\n        \"tableName\": \"郑州基地客户CRM（日报更新）\"\n      },\n      {\n        \"tableId\": \"BbSLOhG\",\n        \"tableName\": \"📝客户跟进记录 (郑州)\"\n      },\n      {\n        \"tableId\": \"h8ebvtdqh3ewf8lspi6qh\",\n        \"tableName\": \"👨‍💼销售人员管理\"\n      },\n      {\n        \"tableId\": \"ADIKuSx\",\n        \"tableName\": \"重庆工业客户筛选\"\n      },\n      {\n        \"tableId\": \"a3E4TuA\",\n        \"tableName\": \"郑州基地工业客户名册\"\n      },\n      {\n        \"tableId\": \"37nHHgJ\",\n        \"tableName\": \"西安工业客户筛选\"\n      },\n      {\n        \"tableId\": \"tM9G432\",\n        \"tableName\": \"重庆跟进记录备份\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Got base '陕豫渝鄂基地CRM客户管理系统' with 17 table(s). URL rules: AI 表格访问地址: https://docs.dingtalk.com/i/nodes/{baseId}; AI 表格数据表访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=sheetId%3D{tableId}; AI 表格仪表盘访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=applicationId%3D{dashboardId}; AI 表格说明文档地址: https://pre-alidocs.dingtalk.com/i/nodes/{baseId}?iframeQuery=applicationId%3D{documentId}. User-facing guidance: 面向用户时要以人为本、友好直观，优先展示 **实体名称**、可点击链接和必要上下文，尽量隐藏 `baseId`、`tableId`、`viewId`、`dashboardId`、`documentId` 等技术细节；除非用户明确索要或排障必须，否则不要直接呈现这些 ID。\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "table",
+        "get",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-ids",
+        "BbSLOhG,LOVz6n3,qH4EiYm",
+        "--format",
+        "json"
+      ],
+      "stdout": "cdv\",\n            \"fieldName\": \"优先级\",\n            \"type\": \"singleSelect\"\n          },\n          {\n            \"description\": \"自动更新\",\n            \"fieldId\": \"Eje4qk3\",\n            \"fieldName\": \"更新人\",\n            \"type\": \"lastModifier\"\n          },\n          {\n            \"fieldId\": \"ISTMwng\",\n            \"fieldName\": \"学院/职位\",\n            \"type\": \"text\"\n          }\n        ],\n        \"tableId\": \"LOVz6n3\",\n        \"tableName\": \"郑州基地客户CRM（日报更新）\",\n        \"views\": [\n          {\n            \"type\": \"Grid\",\n            \"viewId\": \"62RPGUr\",\n            \"viewName\": \"今日待跟进客户\"\n          },\n          {\n            \"type\": \"Grid\",\n            \"viewId\": \"6KJHukQ\",\n            \"viewName\": \"本周新增客户\"\n          },\n          {\n            \"type\": \"FormDesigner\",\n            \"viewId\": \"hJ4PEf1\",\n            \"viewName\": \"新增课题组录入\"\n          },\n          {\n            \"type\": \"Grid\",\n            \"viewId\": \"EdwPhNp\",\n            \"viewName\": \"客户总表\"\n          }\n        ]\n      },\n      {\n        \"fields\": [\n          {\n            \"fieldId\": \"TKGiRfN\",\n            \"fieldName\": \"课题组\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"e2IEiYd\",\n            \"fieldName\": \"质粒抽提\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"hBa9FHa\",\n            \"fieldName\": \"遗传转化类\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"LyV53Xp\",\n            \"fieldName\": \"修饰引物\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"Yca67Fw\",\n            \"fieldName\": \"项目\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"fgT6gLq\",\n            \"fieldName\": \"商城\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"0hcqOHM\",\n            \"fieldName\": \"普通引物\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"ps3rEtV\",\n            \"fieldName\": \"基因\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"Nr3t7LP\",\n            \"fieldName\": \"分子试剂\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"6hnZWq7\",\n            \"fieldName\": \"蛋白表达\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"nvnc17G\",\n            \"fieldName\": \"测序高\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"fHKpnOA\",\n            \"fieldName\": \"病毒包装\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"ssWCdUy\",\n            \"fieldName\": \"sanger测序\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"Avbm00W\",\n            \"fieldName\": \"RNA\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"Ut5jbfr\",\n            \"fieldName\": \"Micro测序\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"A2a80hy\",\n            \"fieldName\": \"开票单位\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"dExCqdU\",\n            \"fieldName\": \"业 务 员\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"Vn2IoBj\",\n            \"fieldName\": \"2025销售额\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"dgepwTe\",\n            \"fieldName\": \"总计\",\n            \"type\": \"text\"\n          }\n        ],\n        \"tableId\": \"qH4EiYm\",\n        \"tableName\": \"郑州基地课题组消费明细（2026.5月）\",\n        \"views\": [\n          {\n            \"type\": \"Grid\",\n            \"viewId\": \"adS1WG1\",\n            \"viewName\": \"表格\"\n          }\n        ]\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Got 3 tables from base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3. URL rules: AI 表格数据表访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=sheetId%3D{tableId}; AI 表格视图访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=sheetId%3D{tableId}%26viewId%3D{viewId}. User-facing guidance: 面向用户时要以人为本、友好直观，优先展示 **实体名称**、可点击链接和必要上下文，尽量隐藏 `baseId`、`tableId`、`viewId`、`dashboardId`、`documentId` 等技术细节；除非用户明确索要或排障必须，否则不要直接呈现这些 ID。\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json"
+      ],
+      "stdout": "\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成已下单\\n\"\n          },\n          \"ErzrrTS\": \"1953\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"1JTQBZcq45\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"杜灵思\"\n        },\n        \"recordId\": \"2NmiHAriN3\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-31T15:31:54+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"ys56oa05Nh\",\n              \"name\": \"分子项目\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"分子互作项目，有三个及基因要合成，罗晓玲已经在和老师沟通了。\\n\"\n          },\n          \"ErzrrTS\": \"4500\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"GdGhvsakhg\"\n            ]\n          },\n          \"ici3eUR\": \"烟草研究院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"平文丽\"\n        },\n        \"recordId\": \"2RUScjdDxo\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-05T20:00:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"老师自己扩增不出来，推荐提取扩增 测序项目。\\n\"\n          },\n          \"ici3eUR\": \"工业客户\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"刘梦龙\"\n        },\n        \"recordId\": \"2RZw2T6Ph7\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-08T21:04:47+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"高通量测序，近期没有需求，后期可能会做全外显子测序\\n\"\n          },\n          \"ErzrrTS\": \"4000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"1omkUcOsjV\"\n            ]\n          },\n          \"ici3eUR\": \"河南省人民医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"周帅\"\n        },\n        \"recordId\": \"2S0A3j1GML\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-29T21:50:42+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"过表达慢病毒，已沟通发送邮件评估报价\\n\"\n          },\n          \"ErzrrTS\": \"4500\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"KTJwrU7pxa\"\n            ]\n          },\n          \"ici3eUR\": \"药学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"朱金蔓\"\n        },\n        \"recordId\": \"2SysqCQjm8\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-17T21:15:37+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"病毒包装，已沟通发送邮件下单，已成单\\n\"\n          },\n          \"ErzrrTS\": \"2500\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"IUGRNIpzW2\"\n            ]\n          },\n          \"ici3eUR\": \"阜外医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"吕亚冰\"\n        },\n        \"recordId\": \"2VdMtEmeXl\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "2VdMtEmeXl"
+      ],
+      "stdout": "5xh\": \"孟轲\"\n        },\n        \"recordId\": \"5n65hLNImj\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-10T18:39:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"四条FAM修饰siRNA，报价370一条\\n\"\n          },\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"zKWxncl6Mr\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"边传红\"\n        },\n        \"recordId\": \"5pIibhXr1x\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-18T21:24:20+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            },\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"推广试剂活动，了解到老师目前有构建质粒以及转录组测序的需求\\n\"\n          },\n          \"ErzrrTS\": \"5000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"7PHFZuv5cg\"\n            ]\n          },\n          \"ici3eUR\": \"医学科学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"程坷\"\n        },\n        \"recordId\": \"5q0ckjomOj\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-21T21:59:18+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"YlwHsVmXob\",\n              \"name\": \"催款/开票\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"整理课题组消费明细以及预存明细，核对账单，跟进预存回款\\n\"\n          },\n          \"ErzrrTS\": \"100000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"YUoo2RvT3B\"\n            ]\n          },\n          \"ici3eUR\": \"龙湖现代免疫实验室\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王海丽\"\n        },\n        \"recordId\": \"5vPSCzAdE9\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-07T17:24:57+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"yyLFrLS1TK\",\n              \"name\": \"试剂产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"现在课题组分开，有采购一套移液器的意向，心理价位300元一支。试剂有marker和琼脂糖的意向。\\n\"\n          },\n          \"ErzrrTS\": \"3000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"JGW2bBfR4R\"\n            ]\n          },\n          \"ici3eUR\": \"植物保护学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王子明\"\n        },\n        \"recordId\": \"69bPCblqO0\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-23T19:34:21+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"ys56oa05Nh\",\n              \"name\": \"分子项目\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"试用切胶仪没问题，今天购买10支核酸染料，赠送一个切胶仪，已经下单。\\n\"\n          },\n          \"ErzrrTS\": \"2200\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"5gu5i3nDGI\"\n            ]\n          },\n          \"ici3eUR\": \"动物医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"崔鸿博\"\n        },\n        \"recordId\": \"6BOh9WxHkg\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "6BOh9WxHkg"
+      ],
+      "stdout": "        }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"YlwHsVmXob\",\n              \"name\": \"催款/开票\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"张学斌课题组河南农大账款今天已报账\\n\"\n          },\n          \"ErzrrTS\": \"3718.95\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"8e90bSqNiz\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"段海洋\"\n        },\n        \"recordId\": \"9JIqLMsrW5\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-25T20:53:02+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成已下单\\n\"\n          },\n          \"ErzrrTS\": \"2634\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"k0DHIMOBM7\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"吴洪梅\"\n        },\n        \"recordId\": \"9Jzw3Zreo9\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-26T21:20:41+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"转录组，蛋白组测序跟进，现在还在等一个实验结果，才能决定后续实验\\n\"\n          },\n          \"ErzrrTS\": \"2000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"7CLbnNO8mm\"\n            ]\n          },\n          \"ici3eUR\": \"医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"许贝贝\"\n        },\n        \"recordId\": \"9KtKSEPCJY\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-22T22:44:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"ys56oa05Nh\",\n              \"name\": \"分子项目\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"纳米孔测序反馈问题进行优化\\n\"\n          },\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"JY50mi4WRr\"\n            ]\n          },\n          \"ici3eUR\": \"郑州市第六人民医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"位曙光\"\n        },\n        \"recordId\": \"9LI9ev2zyv\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-21T19:23:23+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"yyLFrLS1TK\",\n              \"name\": \"试剂产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"DLC101购买\\n\"\n          },\n          \"ErzrrTS\": \"150\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"PLX5mXxl3v\"\n            ]\n          },\n          \"ici3eUR\": \"药学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"吴婉玉\"\n        },\n        \"recordId\": \"9LO8O7bMQS\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-16T22:00:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"sirna三保一套餐，报价888，老师觉得贵，价格沟通中\\n\"\n          },\n          \"ici3eUR\": \"工业客户\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"贵老师\"\n        },\n        \"recordId\": \"9NsOpkHhVA\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "9NsOpkHhVA"
+      ],
+      "stdout": "      \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"Msfnw4AlH9\"\n            ]\n          },\n          \"ici3eUR\": \"生物医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"汪宇翔\"\n        },\n        \"recordId\": \"BmAMdPVjbP\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-28T22:11:33+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成询价\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"bMqmrJgPqS\"\n            ]\n          },\n          \"ici3eUR\": \"基础医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"曹明亚\"\n        },\n        \"recordId\": \"BmSV1roWDI\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-27T21:57:22+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"YlwHsVmXob\",\n              \"name\": \"催款/开票\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"推广高通量测序，核对订单\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"yfKtYzcRWO\"\n            ]\n          },\n          \"ici3eUR\": \"基础医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"张静\"\n        },\n        \"recordId\": \"BpuT0YhkJC\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-11T18:46:13+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"ys56oa05Nh\",\n              \"name\": \"分子项目\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"45个提取扩增测序，样品已经取样。\\n\"\n          },\n          \"ErzrrTS\": \"2235\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"DIHO4PPr6q\"\n            ]\n          },\n          \"ici3eUR\": \"烟草学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"李秀华\"\n        },\n        \"recordId\": \"BpxiZF4o6v\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-16T22:36:12+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"修饰点突变和细胞功能实验，已拉群对接技术，客户整理好需求发群里对接\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"hOCEDqgZTt\"\n            ]\n          },\n          \"pdb639c8ozcv0t5uqi5xh\": \"谭老师\"\n        },\n        \"recordId\": \"BrUpw4Hz5v\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-09T23:21:20+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"ASO合成，最近先养细胞，看细胞状态再合成\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"hOCEDqgZTt\"\n            ]\n          },\n          \"ici3eUR\": \"郑州大学第一附属医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"徐文博\"\n        },\n        \"recordId\": \"BrYbGHyRQ0\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "BrYbGHyRQ0"
+      ],
+      "stdout": "    ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成，已沟通发送邮件\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"范雅靓\"\n        },\n        \"recordId\": \"FB7HMYkZG7\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-17T19:15:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成合作框架协议的商定\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"bA0o3fOGJ7\"\n            ]\n          },\n          \"ici3eUR\": \"工业客户\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"姚会会\"\n        },\n        \"recordId\": \"FCXJrlGGwH\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-20T11:09:39+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"评估基因合成，已经安排下单。\\n\"\n          },\n          \"ErzrrTS\": \"625.5\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"jr43h3TVxn\"\n            ]\n          },\n          \"ici3eUR\": \"动物科技学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"张志远\"\n        },\n        \"recordId\": \"FDjkDdoiF2\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-08T21:20:08+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成，已发订购表\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"3EnogtejgU\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王璐\"\n        },\n        \"recordId\": \"FEzJGbabzh\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-02-27T00:00:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成\\n\"\n          },\n          \"ErzrrTS\": \"0\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"FdUslr83kh\"\n            ]\n          },\n          \"ici3eUR\": \"牧原实验室\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"刘书利\"\n        },\n        \"recordId\": \"FGPhxs2ebj\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-06T22:22:46+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"yyLFrLS1TK\",\n              \"name\": \"试剂产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"套餐跟进，对于感受态目前400元一盒，琼脂糖100，其他酶用诺唯赞的。而且不一次性出完，要留库。\\n\"\n          },\n          \"ErzrrTS\": \"400\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"JUasnJQBru\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"邢烨\"\n        },\n        \"recordId\": \"FGXLGYNp4V\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "FGXLGYNp4V"
+      ],
+      "stdout": "kedRecordIds\": [\n              \"IGdQA8CiN9\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"于澳飞\"\n        },\n        \"recordId\": \"ISLdgZoaPf\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-25T19:12:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"YlwHsVmXob\",\n              \"name\": \"催款/开票\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"账款问题当面跟进，走喀斯吗下单\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"b2TNN7SWRn\"\n            ]\n          },\n          \"ici3eUR\": \"工业客户\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"周园\"\n        },\n        \"recordId\": \"IUctfPoTpk\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-22T22:21:32+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成正在沟通，学生需要和老师沟通后然后填写序列合成。\\n\"\n          },\n          \"ErzrrTS\": \"500\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"87E1Tx08Bx\"\n            ]\n          },\n          \"ici3eUR\": \"免疫实验室\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"温颖\"\n        },\n        \"recordId\": \"Ib679OJggw\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-15T09:39:20+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成4条，已经合成。\\n\"\n          },\n          \"ErzrrTS\": \"1249\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"jr43h3TVxn\"\n            ]\n          },\n          \"ici3eUR\": \"动物科技学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"张志远\"\n        },\n        \"recordId\": \"IcIYkNnjRh\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-25T20:55:05+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成已下单\\n\"\n          },\n          \"ErzrrTS\": \"280\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"0OmvAU0IWb\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"时朝阳\"\n        },\n        \"recordId\": \"Ie1DP9Larw\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-28T13:42:48+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"有五个基因合成意向一共五个，每个大概1000bp，邮寄合成太多老师要先构建。\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"LF5JHXzTrf\"\n            ]\n          },\n          \"ici3eUR\": \"神农种业实验室\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"杨慕菡\"\n        },\n        \"recordId\": \"IesGlCKLv7\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "IesGlCKLv7"
+      ],
+      "stdout": "         },\n          \"ErzrrTS\": \"1800\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"OIffWh0aFN\"\n            ]\n          },\n          \"ici3eUR\": \"医学科学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"李德海\"\n        },\n        \"recordId\": \"LyydZ8VIku\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-27T19:11:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"ys56oa05Nh\",\n              \"name\": \"分子项目\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"纳米孔测序引物合成，意向沟通及后续合作沟通\\n\"\n          },\n          \"ErzrrTS\": \"500\",\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"张金龙\"\n        },\n        \"recordId\": \"M1ZgLgEuEm\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-09T19:06:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"YlwHsVmXob\",\n              \"name\": \"催款/开票\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"核对预付款使用明细，核对存货\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"dOwOzrTCWw\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"曹恒瑜\"\n        },\n        \"recordId\": \"M2EbiBsNKo\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-22T22:19:36+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"目的质粒大小大概1500bp，指定载体3.1加上flag标签，暂未评估。\\n\"\n          },\n          \"ErzrrTS\": \"800\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"jr43h3TVxn\"\n            ]\n          },\n          \"ici3eUR\": \"动物科技学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王晨旭\"\n        },\n        \"recordId\": \"M5xKeOt3mA\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-15T20:25:37+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成询价，报完价格，老师询问是否有pVAX1载体\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"G8ZscSFXuG\"\n            ]\n          },\n          \"ici3eUR\": \"生科院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"田艺娜\"\n        },\n        \"recordId\": \"M62MCeE7oe\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-21T19:20:39+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"过表达OVA的质粒做细胞转染用的，最好是有那个OVA带GFP带luc的这种质粒\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"7aARwR9rSc\"\n            ]\n          },\n          \"ici3eUR\": \"药学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"卢提醒\"\n        },\n        \"recordId\": \"M7ymWA2ww6\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "M7ymWA2ww6"
+      ],
+      "stdout": "ordId\": \"P3CkNEvetR\"\n      },\n      {\n        \"cells\": {},\n        \"recordId\": \"P3nyTNgoKg\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-01T19:48:04+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"YlwHsVmXob\",\n              \"name\": \"催款/开票\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"都是仁用杏课题组但是每个都是自己走账，目前发票和报告都给到老师，回复下周给报账，目前未结算发票5653.5元，要求必须本月回款。\\n\"\n          },\n          \"ErzrrTS\": \"5653.5\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"hTS60amnzE\"\n            ]\n          },\n          \"ici3eUR\": \"经济林研究所\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"张嘉嘉\"\n        },\n        \"recordId\": \"P4hsMmdDu4\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-09T19:42:07+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"高通量测序推广，老师暂时不需要，咨询了耗材有没有活动\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"8ioyAJvqlL\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"马丽娟\"\n        },\n        \"recordId\": \"P7fKVxbGSj\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-25T19:39:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"微生物多样性推广，按价格60元跟进，老师想做食性检测，在沟通。\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"ILjyLaameh\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"于同雷\"\n        },\n        \"recordId\": \"P7zQuiEtWZ\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-08T22:44:50+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"单细胞测序，沟通申请组织保存液，造模需要时间，晚点再申请\\n\"\n          },\n          \"ErzrrTS\": \"10000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"NQgr6gpeye\"\n            ]\n          },\n          \"ici3eUR\": \"郑州大学第一附属医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"许乘风\"\n        },\n        \"recordId\": \"P84WVy1W8Z\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-20T19:30:40+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"单细胞测序咨询，做不做单细胞RNA DNA ATAC这些测序\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"bMqmrJgPqS\"\n            ]\n          },\n          \"ici3eUR\": \"基础医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"徐芷玥\"\n        },\n        \"recordId\": \"P9jENX69zS\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "P9jENX69zS"
+      ],
+      "stdout": " \"生科院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"李燕芳\"\n        },\n        \"recordId\": \"SRkNHzbJLD\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-12T22:12:40+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"推广组学，最近有转录组可能会送，目前还没有确定好，样本一直在液氮里面保存着，问影响做转录组不，已对接技术确认，后续确定要做时候联系\\n\"\n          },\n          \"ErzrrTS\": \"1600\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"hOCEDqgZTt\"\n            ]\n          },\n          \"ici3eUR\": \"药学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"朱金蔓\"\n        },\n        \"recordId\": \"SW483OQHVJ\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-07T11:03:11+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            },\n            {\n              \"id\": \"U3oucoiAsj\",\n              \"name\": \"蛋白产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成意向已经安排下单，多肽合成意向正在让技术评估。\\n\"\n          },\n          \"ErzrrTS\": \"2000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"XHxTIEbCEV\"\n            ]\n          },\n          \"ici3eUR\": \"动物医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"娄浩宇\"\n        },\n        \"recordId\": \"SX9Maonm7E\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-08T21:11:47+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"zDfuxvWfav\",\n              \"name\": \"分子探针\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"修饰siRNA，10OD\\n\"\n          },\n          \"ErzrrTS\": \"1044\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"zKWxncl6Mr\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"T\"\n        },\n        \"recordId\": \"SXCmic0y78\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-02-09T10:23:07+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成已下单\\n\"\n          },\n          \"ErzrrTS\": \"1743\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"k0DHIMOBM7\"\n            ]\n          },\n          \"ici3eUR\": \"早熟\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"安莉\"\n        },\n        \"recordId\": \"SYqZaH2o6w\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-29T21:12:52+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"高通量测序，基因合成，需要做一个质粒抽提，已沟通下单\\n\"\n          },\n          \"ErzrrTS\": \"540\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"sMROPwlJMo\"\n            ]\n          },\n          \"pdb639c8ozcv0t5uqi5xh\": \"郭舜尧\"\n        },\n        \"recordId\": \"Sf05qaM1xm\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "Sf05qaM1xm"
+      ],
+      "stdout": "      \"markdown\": \"双荧光素酶报告质粒构建，已跟进下单并确认\\n\"\n          },\n          \"ErzrrTS\": \"1700\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"TRBcRfJWRj\"\n            ]\n          },\n          \"ici3eUR\": \"医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"罗媛媛\"\n        },\n        \"recordId\": \"VUMW5lpbSV\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-15T21:06:19+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"已填写订单三保一888元一个基因，已经发到邮箱。\\n\"\n          },\n          \"ErzrrTS\": \"1776\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"fUSYAO8j2N\"\n            ]\n          },\n          \"ici3eUR\": \"生命科学学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"樊亚丽\"\n        },\n        \"recordId\": \"VVoqeedFxY\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-10T19:45:17+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"yyLFrLS1TK\",\n              \"name\": \"试剂产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"感受态细胞，先采购一包\\n\"\n          },\n          \"ErzrrTS\": \"150\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"Ao5pHP9ZSz\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"吴晗\"\n        },\n        \"recordId\": \"VaizQNbSj5\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-08T10:53:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成，最近有4个突变要做，已沟通本月活动沟通下单\\n\"\n          },\n          \"ErzrrTS\": \"1500\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"KTJwrU7pxa\"\n            ]\n          },\n          \"ici3eUR\": \"生物工程学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"刘祎岚\"\n        },\n        \"recordId\": \"VbT4g9wVai\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-29T14:00:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"细菌的基因组测序，推荐老师做完成图，报价1350，老师说看看报告，已发给他\\n\"\n          },\n          \"pdb639c8ozcv0t5uqi5xh\": \"秦英惠\"\n        },\n        \"recordId\": \"VcqDyY1ija\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-09T14:52:07+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成3条，每条1500bp，报价0.5元，想让再便宜一些，让老师填写表格评估一下。\\n\"\n          },\n          \"ErzrrTS\": \"2250\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"7TqHZ5vrQL\"\n            ]\n          },\n          \"ici3eUR\": \"小麦研究所\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王苗利\"\n        },\n        \"recordId\": \"VmIEjhXVIg\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "VmIEjhXVIg"
+      ],
+      "stdout": "  },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-28T18:00:58+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"沟通T2T基因组组装，目前武汉一家公司也来找过他了并进行了沟通，最终还是需要找王俊谈。现在只是前期的样品咨询，因为快到了大豆种植先进行前期的规划，看如何种植。\\n\"\n          },\n          \"ErzrrTS\": \"660000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"YrflEX1C9E\"\n            ]\n          },\n          \"ici3eUR\": \"神农种业实验室\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"刘康林\"\n        },\n        \"recordId\": \"Z0adJOhLnP\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-04T01:14:19+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"咨询转录组使用illumina测序，报价270元，给老师回复两条消息老师还未给回复，不清楚价格还是其他问题，明天去沟通一下，了解一下情况。\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"qTWdLCJrxQ\"\n            ]\n          },\n          \"ici3eUR\": \"生物医学研究所\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"程康\"\n        },\n        \"recordId\": \"Z5X5dgXWLu\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-29T20:18:56+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"U3oucoiAsj\",\n              \"name\": \"蛋白产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"接课题组之前人的实验，自己构建的载体，前面构好之后测序结果是对的，但是做表达的时候考马斯亮蓝结果是不对的，战春燕推荐交给蛋白部给做一下试试，从序列开始分析，找到可能的原因，选择更优的表达和纯化方案\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"7aARwR9rSc\"\n            ]\n          },\n          \"ici3eUR\": \"药学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"刘妞\"\n        },\n        \"recordId\": \"Z6o06KFXRI\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-26T21:18:08+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"shRNA既用型四保一已下单\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"4s2DLSdgyk\"\n            ]\n          },\n          \"ici3eUR\": \"药学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"孙秀中\"\n        },\n        \"recordId\": \"Z7VidDzAJZ\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-08T10:45:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"送订购病毒液，维护客情，老师不在，对接学生交接\\n\"\n          },\n          \"ErzrrTS\": \"6000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"KTJwrU7pxa\"\n            ]\n          },\n          \"ici3eUR\": \"郑州市中心医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王春燕\"\n        },\n        \"recordId\": \"Z8orzWJSmK\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "Z8orzWJSmK"
+      ],
+      "stdout": "      \"ici3eUR\": \"动物科技学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"涂瑾秋\"\n        },\n        \"recordId\": \"cHAeMTPDmp\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-20T19:30:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"ys56oa05Nh\",\n              \"name\": \"分子项目\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"安图方法学建立提取扩增测序项目，拉了线上会议简单沟通，资质及报价已发客户。\\n\"\n          },\n          \"ErzrrTS\": \"0\",\n          \"ici3eUR\": \"工业客户\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王楠\"\n        },\n        \"recordId\": \"cNOAQrepOV\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-06T21:33:36+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"修饰siRNA已下单\\n\"\n          },\n          \"ErzrrTS\": \"1216\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"zKWxncl6Mr\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"边传红\"\n        },\n        \"recordId\": \"cOK0JiEh81\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-23T21:39:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"植物遗传转化，想做拟南芥的遗传转化，已拉群，沟通报价中\\n\"\n          },\n          \"pdb639c8ozcv0t5uqi5xh\": \"刘俊聪\"\n        },\n        \"recordId\": \"cYJ3O3CLCF\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-19T19:53:09+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"yyLFrLS1TK\",\n              \"name\": \"试剂产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"三包TSJ105三包TSJ012\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"MYhFYjR5OD\"\n            ]\n          },\n          \"ici3eUR\": \"生科院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"汤宝猛\"\n        },\n        \"recordId\": \"cZAR3NgQlx\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-02T11:30:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"全基因组测序/BSA分析，西瓜基因组，目前再沟通价格\\n\"\n          },\n          \"ici3eUR\": \"工业客户\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"段尚磊\"\n        },\n        \"recordId\": \"cZb0vxSYmV\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-17T21:35:24+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"U3oucoiAsj\",\n              \"name\": \"蛋白产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"蛋白表达意向已经安排下单，目前一代测序在有康安排。\\n\"\n          },\n          \"ErzrrTS\": \"6500\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"35E7U4eHme\"\n            ]\n          },\n          \"ici3eUR\": \"河南省农业科学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"巩晨\"\n        },\n        \"recordId\": \"cecBJaXAlk\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "cecBJaXAlk"
+      ],
+      "stdout": "markdown\": \"重组抗体，腹水纯化，预计月底确定下单\\n\"\n          },\n          \"ErzrrTS\": \"6000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"JY50mi4WRr\"\n            ]\n          },\n          \"ici3eUR\": \"郑州市第六人民医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"霍玉奇\"\n        },\n        \"recordId\": \"fIimFQIMT4\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-26T21:13:22+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"zDfuxvWfav\",\n              \"name\": \"分子探针\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"客户预估了一下，要是预实验有用，会处理很多样品，一个的需要几十OD 甚至上百OD的修饰引物\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"zKWxncl6Mr\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"边传红\"\n        },\n        \"recordId\": \"fL3o4wpAz8\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-14T22:25:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"取函证，沟通基因活动\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"IZ1YTjql63\"\n            ]\n          },\n          \"pdb639c8ozcv0t5uqi5xh\": \"孙璞\"\n        },\n        \"recordId\": \"fNfpA89reE\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-30T15:00:37+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"沟通预存，高通量测序，20多个样本，本周送测\\n\"\n          },\n          \"ErzrrTS\": \"4000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"gu0er8XNmq\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"关攀锋\"\n        },\n        \"recordId\": \"fNkhEjlb4Z\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-19T11:02:23+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"想测酵母的全基因组测序，无参报价7400元全基因组精细图。\\n\"\n          },\n          \"ErzrrTS\": \"7400\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"XEVr5tSOJG\"\n            ]\n          },\n          \"ici3eUR\": \"生命科学学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王文玉\"\n        },\n        \"recordId\": \"fOuqj63YnL\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-20T22:30:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"YlwHsVmXob\",\n              \"name\": \"催款/开票\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"账款问题沟通，催促及时报账\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"ici3eUR\": \"工业客户\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"李莎莎\"\n        },\n        \"recordId\": \"fT4EVzNAOd\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "fT4EVzNAOd"
+      ],
+      "stdout": "不需要扩增，报价35\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"rSLDuSpST3\"\n            ]\n          },\n          \"ici3eUR\": \"工业客户\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"钱宁\"\n        },\n        \"recordId\": \"iqIOdA47AO\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-25T19:30:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成合作沟通，报价0.5，沟通了一些载体细节。考虑合作\\n\"\n          },\n          \"pdb639c8ozcv0t5uqi5xh\": \"庞景杰\"\n        },\n        \"recordId\": \"iuLUhcABAb\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-18T23:23:46+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"XCUa92kxdC\"\n            ]\n          },\n          \"pdb639c8ozcv0t5uqi5xh\": \"邢亚迪\"\n        },\n        \"recordId\": \"izWGONhi5T\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-26T12:00:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"遗传转化订单，今天跟进，老师基因还没确定，后面再说\\n\"\n          },\n          \"pdb639c8ozcv0t5uqi5xh\": \"刘俊聪\"\n        },\n        \"recordId\": \"j1L7ZXzOHK\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-18T23:36:03+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"老师要做miRNA推荐shRNA三保一套餐\\n\"\n          },\n          \"ErzrrTS\": \"1200\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"dOwOzrTCWw\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"宋燕敏\"\n        },\n        \"recordId\": \"j2EcfLHzhz\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-19T19:54:16+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"要做针对鸡的，1000个基因，每个基因设计6条靶向序列，做成慢病毒\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"iqoZH2ei2F\"\n            ]\n          },\n          \"ici3eUR\": \"基础医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"李启明\"\n        },\n        \"recordId\": \"j6njATLEDO\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-03T14:34:11+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"高通量和项目沟通，高通量会走招标在官网发出，下单基因合成。\\n\"\n          },\n          \"ErzrrTS\": \"862.4\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"192qBVs5WM\"\n            ]\n          },\n          \"ici3eUR\": \"科学院生物医学研究所\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"刘慧阳\"\n        },\n        \"recordId\": \"j7ZddUpZe8\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "j7ZddUpZe8"
+      ],
+      "stdout": "nkedRecordIds\": [\n              \"5Y14kf9bT2\"\n            ]\n          },\n          \"ici3eUR\": \"河南疾控\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"马晓会\"\n        },\n        \"recordId\": \"mauWuek3pz\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-20T21:15:07+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"yyLFrLS1TK\",\n              \"name\": \"试剂产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"推荐试剂活动，老师说统计下学生最近试剂需求，看看能不能凑个一单两单\\n\"\n          },\n          \"ErzrrTS\": \"1800\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"MV3LpC3vk0\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"任飞荣\"\n        },\n        \"recordId\": \"mb6ZS43dpm\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-27T23:00:16+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"跟进高通量测序，ATAC已预填信息单\\n\"\n          },\n          \"ErzrrTS\": \"12000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"hOCEDqgZTt\"\n            ]\n          },\n          \"ici3eUR\": \"郑州大学第一附属医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"李欣宇\"\n        },\n        \"recordId\": \"mbV01s94OG\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-28T11:01:41+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"shrna合成，已沟通发送邮件\\n\"\n          },\n          \"ErzrrTS\": \"1200\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"HfGM46WypE\"\n            ]\n          },\n          \"ici3eUR\": \"生命科学学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"李影\"\n        },\n        \"recordId\": \"mdbQFH3nbb\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-22T16:00:59+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"YlwHsVmXob\",\n              \"name\": \"催款/开票\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"发李雅木老师的订单核对\\n\"\n          },\n          \"ErzrrTS\": \"1154.8\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"We0MH1Spus\"\n            ]\n          },\n          \"ici3eUR\": \"基础医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"蔡青\"\n        },\n        \"recordId\": \"mjt8sVJpan\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-17T10:13:05+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"跟进基因合成订单，已下单\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"lMSqIjhEZb\"\n            ]\n          },\n          \"ici3eUR\": \"医学科学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"孟彩婷\"\n        },\n        \"recordId\": \"mlhVf4dtAU\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "mlhVf4dtAU"
+      ],
+      "stdout": "rdIds\": [\n              \"7aARwR9rSc\"\n            ]\n          },\n          \"ici3eUR\": \"药学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"韩鹏春\"\n        },\n        \"recordId\": \"puGVHKiopE\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-30T10:13:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"跟进高通量送测，沟通预填信息单\\n\"\n          },\n          \"ErzrrTS\": \"3000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"KTJwrU7pxa\"\n            ]\n          },\n          \"ici3eUR\": \"郑州大学第一附属医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"安亚冉\"\n        },\n        \"recordId\": \"puTIfrHirR\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-20T20:23:51+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成合作沟通，目前在价格磋商阶段\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"bA0o3fOGJ7\"\n            ]\n          },\n          \"ici3eUR\": \"工业客户\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"姚会\"\n        },\n        \"recordId\": \"pxqqloKKlB\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-29T14:31:47+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成已经安排下单。\\n\"\n          },\n          \"ErzrrTS\": \"2136\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"LF5JHXzTrf\"\n            ]\n          },\n          \"ici3eUR\": \"神农\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"杨慕菡\"\n        },\n        \"recordId\": \"pyyGwX0uwn\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-05T19:43:30+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"ys56oa05Nh\",\n              \"name\": \"分子项目\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"提取扩增测序项目沟通\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"4erUpVFxeE\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王春艳\"\n        },\n        \"recordId\": \"pzQq2hYT1r\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-09T21:29:03+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"跟岳毅老师是一起的，有空转和单细胞需求，已拉群对接，下一步申请好报价再找老师沟通一下\\n\"\n          },\n          \"ErzrrTS\": \"120000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"NQgr6gpeye\"\n            ]\n          },\n          \"ici3eUR\": \"郑州大学第一附属医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"许乘风\"\n        },\n        \"recordId\": \"pzbiwQyI2v\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "pzbiwQyI2v"
+      ],
+      "stdout": "      ]\n          },\n          \"ici3eUR\": \"动物医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"杜佳瑞\"\n        },\n        \"recordId\": \"sxy69J0VXO\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-30T10:49:42+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成意向，后续实验要做蛋白表达，先合成基因，后续看自己表达情况，会考虑外包。\\n\"\n          },\n          \"ErzrrTS\": \"200\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"XHxTIEbCEV\"\n            ]\n          },\n          \"ici3eUR\": \"动物医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"江傲\"\n        },\n        \"recordId\": \"syO5WLhoXY\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-05T20:30:18+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成，质粒图谱确认没问题，已下单\\n\"\n          },\n          \"ErzrrTS\": \"2074.5\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"QSnmgUzD65\"\n            ]\n          },\n          \"ici3eUR\": \"基础医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"陈晶滢\"\n        },\n        \"recordId\": \"t1qFuuP1wA\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-27T23:09:57+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"转录组，代谢组跟进，样本本周可以送，沟通先填信息单\\n\"\n          },\n          \"ErzrrTS\": \"2400\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"b3fLm9vdLe\"\n            ]\n          },\n          \"ici3eUR\": \"医学科学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"周乐乐\"\n        },\n        \"recordId\": \"t39pclyWO0\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-23T21:22:35+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"yyLFrLS1TK\",\n              \"name\": \"试剂产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"qpcr试剂，已沟通报价，客户给老师汇报一下\\n\"\n          },\n          \"ErzrrTS\": \"800\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"3qlv64njjE\"\n            ]\n          },\n          \"ici3eUR\": \"郑州大学第一附属医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王浩\"\n        },\n        \"recordId\": \"t5jVIsdEsD\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-18T23:33:45+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"年前合成的质粒，pEGFP-N1-TFAP2A，这边做了两次，都是没有荧光，售后\\n\"\n          },\n          \"ErzrrTS\": \"100\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"9N8vSEKt4Y\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"李双洁\"\n        },\n        \"recordId\": \"tB0hGOtQBH\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "tB0hGOtQBH"
+      ],
+      "stdout": "   ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"试剂意向下单，孙老师正在考虑\\n\"\n          },\n          \"ErzrrTS\": \"1200\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"gG8SjgxtUa\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"吕蒙\"\n        },\n        \"recordId\": \"wg7PHhAooe\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-12T14:28:46+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"预计下周端午之前送测。\\n\"\n          },\n          \"ErzrrTS\": \"7500\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"UyIaSFM828\"\n            ]\n          },\n          \"ici3eUR\": \"斯恒\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"斯恒\"\n        },\n        \"recordId\": \"wix8904zFg\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-02-03T13:53:50+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"yyLFrLS1TK\",\n              \"name\": \"试剂产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"蛋白marker\\n\"\n          },\n          \"ErzrrTS\": \"10000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"KTdMX9WKp0\"\n            ]\n          },\n          \"ici3eUR\": \"药学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"常莹嫣\"\n        },\n        \"recordId\": \"wo7r8J1kjq\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-21T17:46:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"YlwHsVmXob\",\n              \"name\": \"催款/开票\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"马静波实验室新接手的报账负责人，沟通报账事宜\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"kcX0WnbRVJ\"\n            ]\n          },\n          \"ici3eUR\": \"工业客户\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"黄翠婷\"\n        },\n        \"recordId\": \"wog0TfsRFg\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-05T20:30:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"还是烟草的发票退回问题，主动找金老师询问有没有退回，沟通走喀斯马\\n\"\n          },\n          \"ici3eUR\": \"烟草研究院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"金立锋\"\n        },\n        \"recordId\": \"worHWVZXob\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-05T20:21:36+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            },\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"沟通了6个基因的干扰和过表达，会陆续提交，给老师报价800元三保一，过表达0.5元一个碱基。\\n\"\n          },\n          \"ErzrrTS\": \"6750\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"SaJf0dEu1m\"\n            ]\n          },\n          \"ici3eUR\": \"动物科技学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"周力\"\n        },\n        \"recordId\": \"wpwcBeZsLI\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "wpwcBeZsLI"
+      ],
+      "stdout": "\": \"历史遗留账款问题沟通处理，提供资料\\n\"\n          },\n          \"ErzrrTS\": \"500\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"xg26VHR225\"\n            ]\n          },\n          \"ici3eUR\": \"生命科学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"翟会杰\"\n        },\n        \"recordId\": \"zlEknNP4cl\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-05-25T19:48:59+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"yyLFrLS1TK\",\n              \"name\": \"试剂产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"推广基因合成活动，客户下单5盒感受态\\n\"\n          },\n          \"ErzrrTS\": \"1750\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"EkuQQwuaQP\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"邢爱明\"\n        },\n        \"recordId\": \"zlxqbgQ5Ox\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-02-26T00:00:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"小核酸合成已经回复下单\\n\"\n          },\n          \"ErzrrTS\": \"700\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"YW1cQ9ic9B\"\n            ]\n          },\n          \"ici3eUR\": \"植物保护学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"刘龙\"\n        },\n        \"recordId\": \"zn50pYNTJt\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-08T20:16:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"YlwHsVmXob\",\n              \"name\": \"催款/开票\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"核对账单\\n\"\n          },\n          \"ErzrrTS\": \"1550.63\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"Nv6gntZ5bz\"\n            ]\n          },\n          \"ici3eUR\": \"基础医学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"马晓楠\"\n        },\n        \"recordId\": \"zsSb86yesK\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-26T19:07:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"yyLFrLS1TK\",\n              \"name\": \"试剂产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"试剂套餐推广，未下单，最近不做实验\\n\"\n          },\n          \"ErzrrTS\": \"1000\",\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"杨甜甜\"\n        },\n        \"recordId\": \"zy0ugwFIzO\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-16T22:45:35+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"ys56oa05Nh\",\n              \"name\": \"分子项目\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"有理化检测意向，要测4种嘌呤，一个样品475元，不少于9个样品，目前价格已经报给老师，样品还没准备。\\n\"\n          },\n          \"ErzrrTS\": \"4275\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"BSgD0sDePO\"\n            ]\n          },\n          \"ici3eUR\": \"生命科学学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王风芹\"\n        },\n        \"recordId\": \"zy42xrCrJC\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "zy42xrCrJC"
+      ],
+      "stdout": "{\n  \"data\": {},\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 0 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "step": "data_source",
+      "status": "success",
+      "at": "2026-06-30T21:56:05.083409+08:00",
+      "today_records": 16,
+      "scanned_records": 1900
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "LOVz6n3",
+        "--limit",
+        "100",
+        "--format",
+        "json",
+        "--record-ids",
+        "JFJE9cmpBq,oIbUErzhM1,DZFbVv8Prg,5Xz2n03Akf,NQgr6gpeye,4erUpVFxeE,XZeSUhveON,nxL2ae83HM,1FgzTCBOBT"
+      ],
+      "stdout": "        \"name\": \"T5\"\n          },\n          \"a8gJCGq\": \"### 调研报告：河南农业大学官凯锋人员研究方向分析\\n\\n作为生物行业调研专家，我针对河南农业大学“官凯锋”人员进行了系统性调研。调研过程包括：\\n- **官方渠道核查**：访问河南农业大学官网（[www.henau.edu.cn](http://www.henau.edu.cn)）、各学院师资页面（如农学院、生命科学学院、资源与环境学院等），并检索校内教职员名录。\\n- **学术数据库检索**：在CNKI（中国知网）、Web of Science、Google Scholar等平台，以“官凯锋” + “河南农业大学”为关键词进行文献和项目查询。\\n- **公开信息验证**：检查河南省科技厅项目公示、国家自然科学基金委数据库及行业会议记录，确认相关研究活动。\\n\\n#### 调研结论\\n经全面检索，**未在河南农业大学官方渠道、学术数据库或公开记录中找到名为“官凯锋”的教职员工或研究人员信息**。具体原因包括：\\n- 河南农业大学官网的师资队伍列表（截至2023年10月）中无“官凯锋”匹配项，常见姓氏如“关”（如关克俭）或“管”有记录，但“官”姓在该校生物相关学院（如农学院、生命科学学院）未见登记。\\n- 学术数据库中无以“官凯锋”为作者且 affiliation 为“Henan Agricultural University”的论文、专利或科研项目。\\n- 可能原因：姓名拼写误差（如“关凯锋”或“管凯锋”）、非在职人员、或信息未公开（如新入职但未更新官网）。建议用户复核姓名准确性或提供更多信息（如所属学院、职称）。\\n\\n#### 输出结果\\n根据要求，研究方向和关键词总结如下。由于未找到相关信息，按规范填入“未搜索到相关信息”。\\n\\n| 项目         | 内容                     |\\n|--------------|--------------------------|\\n| 研究方向     | 未搜索到相关信息         |\\n| 关键词       | 未搜索到相关信息         |\\n\\n**说明**：  \\n- 本调研基于公开可查信息，若后续确认姓名正确性（例如“官”姓为罕见姓氏，或实际为“关凯锋”），建议重新定向检索。河南农业大学生物领域常见研究方向包括作物遗传育种、植物保护、微生物资源利用等，但无法关联到指定人员。  \\n- 如需进一步协助（如扩大调研范围至河南省其他农业机构），请提供补充细节。\",\n          \"crz3i1wi7dnmsn7xirzap\": \"3622.5\",\n          \"fdm21r308sb03l2yzkkw7\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"jxzfinmckxuusjowbz5ca\": \"官凯锋\",\n          \"ltl4xQ3\": {\n            \"linkedRecordIds\": [\n              \"mSP99ztycl\"\n            ]\n          },\n          \"nwlnalxkb18mah2qh2ap0\": \"2026-06-30T21:39:12+08:00\"\n        },\n        \"recordId\": \"nxL2ae83HM\"\n      },\n      {\n        \"cells\": {\n          \"5bru2trwv2ptkohlnz53s\": \"| 字段 | 内容 |\\n|------|------|\\n| 研究方向 | 未搜索到相关信息 |\\n| 推广产品 | DNA合成 基因合成 引物合成 测序服务 分子克隆 蛋白质表达与纯化 生物信息分析 修饰引物合成 RNA合成 定制抗体服务 病毒载体构建 代谢组学分析 蛋白质组学分析 细胞系构建 CRISPR/Cas9基因编辑|\",\n          \"Eje4qk3\": {\n            \"name\": \"刘壮\",\n            \"uid\": \"498596005\"\n          },\n          \"ISTMwng\": \"农学院/教授\",\n          \"W3etxe7\": \"河南农业大学\",\n          \"WjhLcdv\": {\n            \"id\": \"NocVGdj58N\",\n            \"name\": \"T5\"\n          },\n          \"a8gJCGq\": \"### 调研报告：河南农业大学王增人员研究方向分析\\n\\n作为生物行业调研专家，我对河南农业大学“王增人员”进行了系统调研。调研基于以下步骤：\\n- **数据来源**：河南农业大学官网（www.henau.edu.cn）、中国知网（CNKI）、Web of Science、Scopus、国家自然科学基金委员会数据库、以及公开学术出版物（截至2023年10月训练数据）。\\n- **调研方法**：\\n  - 检索河南农业大学教职工名录、学院师资介绍（重点关注生命科学学院、农学院、植物保护学院等生物相关学院）。\\n  - 搜索学术数据库（CNKI、Web of Science）以识别“王增”作为作者的研究论文。\\n  - 核查国家自然科学基金项目负责人信息。\\n  - 验证姓名准确性：中文名“王增”（拼音：Wang Zeng），常见于农业生物技术领域，但需排除同音字错误（如“王增辉”“王增杰”等）。\\n- **关键发现**：\\n  - 河南农业大学教职工名录中，**未找到确切名为“王增”的在职研究人员**。该校生物相关学院（如生命科学学院、农学院）的师资列表中，常见姓氏“王”的教授包括王慧、王磊、王道杰等，但无“王增”记录。\\n  - 学术数据库检索（CNKI、Web of Science）：\\n    - 以“Wang Zeng” + “Henan Agricultural University”为关键词，未发现匹配的近期论文（2018-2023年）。\\n    - 扩展检索“王增” + “河南农业大学”，结果多为无关条目（如其他机构人员或历史数据），无可靠关联。\\n  - 国家自然科学基金项目查询：2018-2023年河南农业大学获批项目中，无“王增”作为负责人的记录。\\n  - 可能原因：姓名输入错误（如“王增”应为“王增辉”或“王增杰”）、非在职人员（如已离职或退休）、或非核心研究人员（如行政人员）。\\n\\n#### 结论\\n- **调研结果**：未找到河南农业大学与“王增”直接对应的生物行业研究人员的有效信息。该校生物领域知名专家包括张改平（动物免疫学）、王道杰（作物遗传育种）等，但“王增”无匹配记录。\\n- **建议**：用户需复核姓名准确性（例如，是否应为“王增辉”？河南农业大学有王增辉教授，研究方向为植物病理学）。若确认姓名无误，则该人员可能不存在或信息未公开。\\n\\n#### 输出单元格\\n根据要求，总结关键词并填入指定单元格格式。由于未找到相关信息，单元格内容如下：\\n\\n| 字段 | 内容 |\\n|------|------|\\n| 研究方向 | 未搜索到相关信息 |\\n| 关键词总结 | 未搜索到相关信息 |\\n\\n**说明**：  \\n- 若用户能提供更准确姓名（如“王增辉”）或附加信息（如学院、职称），可进一步精准调研。  \\n- 本报告基于公开数据，如有内部数据源，建议补充核查。\",\n          \"crz3i1wi7dnmsn7xirzap\": \"173\",\n          \"fdm21r308sb03l2yzkkw7\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"jxzfinmckxuusjowbz5ca\": \"王增\",\n          \"ltl4xQ3\": {\n            \"linkedRecordIds\": [\n              \"q9McgBQflD\"\n            ]\n          },\n          \"nwlnalxkb18mah2qh2ap0\": \"2026-06-30T21:41:23+08:00\"\n        },\n        \"recordId\": \"1FgzTCBOBT\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 9 record(s) from table LOVz6n3 in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "step": "enrichment",
+      "status": "success",
+      "at": "2026-06-30T21:56:06.137429+08:00",
+      "clients": 17,
+      "consumption": 744
+    },
+    {
+      "step": "html_generation",
+      "status": "success",
+      "at": "2026-06-30T21:56:06.143860+08:00",
+      "files": [
+        "谷昊南_2026-06-30_客户跟进方案.html",
+        "刘壮_2026-06-30_客户跟进方案.html",
+        "黄洋_2026-06-30_客户跟进方案.html",
+        "张迎祥_2026-06-30_客户跟进方案.html"
+      ]
+    },
+    {
+      "kind": "deploy",
+      "cmd": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/youzijian/Documents/Codex/2026-06-22/codex-codex/work/scripts/publish_github_pages.py",
+        "--source-dir",
+        "/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/2026-06-30",
+        "--repo",
+        "zz-business-reports",
+        "--subdir",
+        "sales-daily/2026-06-30",
+        "--output-json",
+        "/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/2026-06-30/deploy_urls.json",
+        "--url-file",
+        "/tmp/zz_sales_daily_public_url.txt"
+      ],
+      "stdout": "4b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-b7x9zg7v\"\n    ],\n    \"cwd\": \"\",\n    \"stdout\": \"\",\n    \"stderr\": \"Cloning into '/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-b7x9zg7v'...\\n\",\n    \"returncode\": 0\n  },\n  \"git_add\": {\n    \"cmd\": [\n      \"/Users/youzijian/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/git\",\n      \"add\",\n      \"-A\"\n    ],\n    \"cwd\": \"/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-b7x9zg7v\",\n    \"stdout\": \"\",\n    \"stderr\": \"\",\n    \"returncode\": 0\n  },\n  \"git_commit\": {\n    \"cmd\": [\n      \"/Users/youzijian/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/git\",\n      \"commit\",\n      \"-m\",\n      \"Publish sales-daily/2026-06-30\"\n    ],\n    \"cwd\": \"/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-b7x9zg7v\",\n    \"stdout\": \"[gh-pages 9c0eaa4] Publish sales-daily/2026-06-30\\n Committer: 尤子健 <youzijian@youzijiandeMacBook-Pro.local>\\nYour name and email address were configured automatically based\\non your username and hostname. Please check that they are accurate.\\nYou can suppress this message by setting them explicitly:\\n\\n    git config --global user.name \\\"Your Name\\\"\\n    git config --global user.email you@example.com\\n\\nAfter doing this, you may fix the identity used for this commit with:\\n\\n    git commit --amend --reset-author\\n\\n 2 files changed, 51 insertions(+)\\n create mode 100644 sales-daily/2026-06-30/deploy_raw.json\\n create mode 100644 sales-daily/2026-06-30/deploy_urls.json\\n\",\n    \"stderr\": \"\",\n    \"returncode\": 0\n  },\n  \"git_push\": {\n    \"cmd\": [\n      \"/Users/youzijian/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/git\",\n      \"push\",\n      \"origin\",\n      \"gh-pages\"\n    ],\n    \"cwd\": \"/var/folders/qc/m14b6lcx0ylgyby91zh6fkdh0000gn/T/zz-gh-pages-b7x9zg7v\",\n    \"stdout\": \"\",\n    \"stderr\": \"To https://github.com/yzj2447007437-sudo/zz-business-reports.git\\n   0dfe2f4..9c0eaa4  gh-pages -> gh-pages\\n\",\n    \"returncode\": 0\n  },\n  \"pages_enable\": {\n    \"cmd\": [\n      \"/opt/homebrew/bin/gh\",\n      \"api\",\n      \"-X\",\n      \"POST\",\n      \"repos/yzj2447007437-sudo/zz-business-reports/pages\",\n      \"-f\",\n      \"source[branch]=gh-pages\",\n      \"-f\",\n      \"source[path]=/\"\n    ],\n    \"cwd\": \"\",\n    \"stdout\": \"{\\\"message\\\":\\\"GitHub Pages is already enabled.\\\",\\\"documentation_url\\\":\\\"https://docs.github.com/rest/pages/pages#create-a-apiname-pages-site\\\",\\\"status\\\":\\\"409\\\"}\",\n    \"stderr\": \"gh: GitHub Pages is already enabled. (HTTP 409)\\n\",\n    \"returncode\": 1\n  },\n  \"status\": \"success\",\n  \"base_url\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30\",\n  \"urls\": {\n    \"base_url\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30\",\n    \"platform\": \"GitHub Pages\",\n    \"repo\": \"yzj2447007437-sudo/zz-business-reports\",\n    \"branch\": \"gh-pages\",\n    \"subdir\": \"sales-daily/2026-06-30\",\n    \"deployed_at\": \"2026-06-30T21:56:06.184179+08:00\",\n    \"刘壮_2026-06-30_客户跟进方案.html\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/刘壮_2026-06-30_客户跟进方案.html\",\n    \"刘壮\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/刘壮_2026-06-30_客户跟进方案.html\",\n    \"张迎祥_2026-06-30_客户跟进方案.html\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/张迎祥_2026-06-30_客户跟进方案.html\",\n    \"张迎祥\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/张迎祥_2026-06-30_客户跟进方案.html\",\n    \"谷昊南_2026-06-30_客户跟进方案.html\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/谷昊南_2026-06-30_客户跟进方案.html\",\n    \"谷昊南\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/谷昊南_2026-06-30_客户跟进方案.html\",\n    \"黄洋_2026-06-30_客户跟进方案.html\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/黄洋_2026-06-30_客户跟进方案.html\",\n    \"黄洋\": \"https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30/黄洋_2026-06-30_客户跟进方案.html\"\n  }\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "step": "deploy",
+      "status": "success",
+      "at": "2026-06-30T21:56:15.368281+08:00",
+      "reason": null,
+      "base_url": "https://yzj2447007437-sudo.github.io/zz-business-reports/sales-daily/2026-06-30"
+    },
+    {
+      "kind": "todo",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "todo",
+        "task",
+        "create",
+        "--title",
+        "谷昊南：补填2026-06-30 CRM跟进记录",
+        "--executors",
+        "17512563908773511",
+        "--priority",
+        "30",
+        "--due",
+        "2026-06-30T18:00:00+08:00",
+        "--format",
+        "json"
+      ],
+      "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"谷昊南：补填2026-06-30 CRM跟进记录\",\n    \"taskId\": \"54667058678\"\n  },\n  \"success\": true\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "todo",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "todo",
+        "task",
+        "create",
+        "--title",
+        "刘壮：跟进王洪秋、刘于漫重点客户（¥20,000）",
+        "--executors",
+        "16255298572921921",
+        "--priority",
+        "40",
+        "--due",
+        "2026-06-30T18:00:00+08:00",
+        "--format",
+        "json"
+      ],
+      "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"刘壮：跟进王洪秋、刘于漫重点客户（¥20,000）\",\n    \"taskId\": \"54666994798\"\n  },\n  \"success\": true\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "todo",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "todo",
+        "task",
+        "create",
+        "--title",
+        "黄洋：跟进岳毅、张易南重点客户（¥31,000）",
+        "--executors",
+        "17031190675928446",
+        "--priority",
+        "40",
+        "--due",
+        "2026-06-30T18:00:00+08:00",
+        "--format",
+        "json"
+      ],
+      "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"黄洋：跟进岳毅、张易南重点客户（¥31,000）\",\n    \"taskId\": \"54801396933\"\n  },\n  \"success\": true\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "todo",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "todo",
+        "task",
+        "create",
+        "--title",
+        "张迎祥：跟进金尚伟、陈萌萌重点客户（¥0）",
+        "--executors",
+        "216932301824574583",
+        "--priority",
+        "30",
+        "--due",
+        "2026-06-30T18:00:00+08:00",
+        "--format",
+        "json"
+      ],
+      "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"张迎祥：跟进金尚伟、陈萌萌重点客户（¥0）\",\n    \"taskId\": \"54801496592\"\n  },\n  \"success\": true\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "step": "todo_creation",
+      "status": "success",
+      "at": "2026-06-30T21:56:16.933063+08:00",
+      "reason": null
+    },
+    {
+      "kind": "dingtalk",
+      "cmd": [],
+      "stdout": "{\"errcode\":0,\"errmsg\":\"ok\"}",
+      "stderr": "",
+      "returncode": 0
+    }
+  ],
+  "url_encoding_fix": "deploy_urls.json and DingTalk payload resent with percent-encoded paths"
+}

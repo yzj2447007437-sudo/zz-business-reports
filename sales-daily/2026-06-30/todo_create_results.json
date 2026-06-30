@@ -1,0 +1,120 @@
+{
+  "status": "success",
+  "results": [
+    {
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "todo",
+        "task",
+        "create",
+        "--title",
+        "谷昊南：补填2026-06-30 CRM跟进记录",
+        "--executors",
+        "17512563908773511",
+        "--priority",
+        "30",
+        "--due",
+        "2026-06-30T18:00:00+08:00",
+        "--format",
+        "json"
+      ],
+      "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"谷昊南：补填2026-06-30 CRM跟进记录\",\n    \"taskId\": \"54667058678\"\n  },\n  \"success\": true\n}\n",
+      "stderr": "",
+      "returncode": 0,
+      "todo": {
+        "owner": "谷昊南",
+        "userId": "17512563908773511",
+        "title": "谷昊南：补填2026-06-30 CRM跟进记录",
+        "due": "2026-06-30T18:00:00+08:00",
+        "priority": "30"
+      }
+    },
+    {
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "todo",
+        "task",
+        "create",
+        "--title",
+        "刘壮：跟进王洪秋、刘于漫重点客户（¥20,000）",
+        "--executors",
+        "16255298572921921",
+        "--priority",
+        "40",
+        "--due",
+        "2026-06-30T18:00:00+08:00",
+        "--format",
+        "json"
+      ],
+      "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"刘壮：跟进王洪秋、刘于漫重点客户（¥20,000）\",\n    \"taskId\": \"54666994798\"\n  },\n  \"success\": true\n}\n",
+      "stderr": "",
+      "returncode": 0,
+      "todo": {
+        "owner": "刘壮",
+        "userId": "16255298572921921",
+        "title": "刘壮：跟进王洪秋、刘于漫重点客户（¥20,000）",
+        "due": "2026-06-30T18:00:00+08:00",
+        "priority": "40",
+        "action": "{'markdown': '老师要测水解氨基酸和总淀粉含量，老师要求把价格降一些，还未报价。\\n'}；{'markdown': '基因合成已经安排合成，安排一条合成0.45元合成，之前是在生工合成的。\\n'}"
+      }
+    },
+    {
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "todo",
+        "task",
+        "create",
+        "--title",
+        "黄洋：跟进岳毅、张易南重点客户（¥31,000）",
+        "--executors",
+        "17031190675928446",
+        "--priority",
+        "40",
+        "--due",
+        "2026-06-30T18:00:00+08:00",
+        "--format",
+        "json"
+      ],
+      "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"黄洋：跟进岳毅、张易南重点客户（¥31,000）\",\n    \"taskId\": \"54801396933\"\n  },\n  \"success\": true\n}\n",
+      "stderr": "",
+      "returncode": 0,
+      "todo": {
+        "owner": "黄洋",
+        "userId": "17031190675928446",
+        "title": "黄洋：跟进岳毅、张易南重点客户（¥31,000）",
+        "due": "2026-06-30T18:00:00+08:00",
+        "priority": "40",
+        "action": "{'markdown': '跟进单细胞测序，空转，等样本好了联系取样，现在还没有开始造模\\n'}；{'markdown': '跟进cut-tag,这个因为之前是在景杰做的，因为需要一起分析，跟老板沟通了，这个课题还是决定在景杰做，后面再有需要可以在擎科做试试"
+      }
+    },
+    {
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "todo",
+        "task",
+        "create",
+        "--title",
+        "张迎祥：跟进金尚伟、陈萌萌重点客户（¥0）",
+        "--executors",
+        "216932301824574583",
+        "--priority",
+        "30",
+        "--due",
+        "2026-06-30T18:00:00+08:00",
+        "--format",
+        "json"
+      ],
+      "stdout": "{\n  \"arguments\": [],\n  \"result\": {\n    \"subject\": \"张迎祥：跟进金尚伟、陈萌萌重点客户（¥0）\",\n    \"taskId\": \"54801496592\"\n  },\n  \"success\": true\n}\n",
+      "stderr": "",
+      "returncode": 0,
+      "todo": {
+        "owner": "张迎祥",
+        "userId": "216932301824574583",
+        "title": "张迎祥：跟进金尚伟、陈萌萌重点客户（¥0）",
+        "due": "2026-06-30T18:00:00+08:00",
+        "priority": "30",
+        "action": "{'markdown': '质粒构建项目，需要pcdna3.4，把载体表发给他了，他考虑一下。\\n'}；{'markdown': '发酵菌液转录组代谢组沟通，目前考虑了一下决定先做代谢组，九个样品。今天催单，今天尽快下单\\n'}"
+      }
+    }
+  ]
+}
