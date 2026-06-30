@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>张迎祥_2026-06-30_客户跟进方案</title>
+<style>
+:root{--bg:#f4f6f9;--card:#fff;--ink:#1f2937;--muted:#667085;--line:#e5e7eb;--blue:#113b72;--blue2:#2457a6;--red:#b42318;--amber:#b76e00;--green:#167a45;--purple:#7b4bb2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;font-size:14px;line-height:1.55;padding:16px}.page{max-width:1480px;margin:0 auto}
+.topbar{background:#102f5d;color:#fff;border-radius:10px;padding:20px 22px;margin-bottom:14px;display:flex;justify-content:space-between;gap:18px;align-items:flex-end}h1{font-size:24px;margin:0 0 6px}.sub{color:#c9d7ea;margin:0}
+.stats{display:grid;grid-template-columns:repeat(4,120px);gap:10px}.stat{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);border-radius:8px;padding:9px}.stat span{display:block;color:#c9d7ea;font-size:12px}.stat b{font-size:18px}
+.client-card{background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 22px rgba(15,23,42,.05);padding:15px;margin:12px 0}.client-head{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:10px}.eyebrow{font-size:12px;color:var(--muted);margin-bottom:3px}h2{font-size:20px;margin:0 0 7px}h3{font-size:15px;margin:0 0 8px}
+.amount-box{background:#fff5f5;border:1px solid #ffd2cf;border-radius:8px;min-width:132px;text-align:right;padding:9px 12px}.amount-box span{display:block;color:#912018;font-size:12px}.amount-box strong{font-size:22px;color:var(--red)}.quick-action{border-left:4px solid var(--blue2);background:#f8fafc;border-radius:8px;padding:10px 12px;font-weight:700;margin-bottom:10px}
+.tag,.risk{display:inline-flex;align-items:center;border-radius:999px;padding:3px 9px;margin:2px;border:1px solid #d8e4fb;background:#eef5ff;color:#174a8b;font-size:12px;max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tag.main{background:#eef5ff;color:#174a8b}.tag.level{background:#f8fafc;color:#475467;border-color:#e5e7eb}.risk-high{color:var(--red);font-weight:800}.risk-mid{color:var(--amber);font-weight:800}.risk-low{color:var(--green);font-weight:800}.two-col{display:grid;grid-template-columns:1.08fr .92fr;gap:12px}
+.panel{border:1px solid var(--line);border-radius:8px;background:#fff;padding:12px;margin:8px 0}.section-title{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:9px}.section-title span{font-weight:800;font-size:15px}.section-title strong{font-size:12px;color:var(--muted)}
+.research-summary{background:#f5f9ff;border-left:4px solid var(--blue2);border-radius:6px;padding:10px 12px}details{margin-top:9px;color:var(--muted)}summary{cursor:pointer}.quote-block{background:#f8fafc;border-left:4px solid var(--blue2);border-radius:6px;padding:10px;white-space:pre-wrap;max-height:240px;overflow:auto}
+.tags{margin-top:9px}.consume-row{display:grid;grid-template-columns:94px 1fr 72px;gap:8px;align-items:center;margin:7px 0}.consume-row span{font-size:12px;text-align:right;color:#475467}.consume-row div{height:16px;background:#eef1f5;border-radius:99px;overflow:hidden}.consume-row i{display:block;height:100%;border-radius:99px}.consume-row b{text-align:right;font-size:12px}
+.year-ref,.finding{background:#fff8e6;border:1px solid #f4d28a;border-radius:6px;padding:8px;margin:8px 0}.finding{background:#f0f9ff;border-color:#b8e1f4;color:#164e63}.muted{color:var(--muted)}.gap-table{width:100%;border-collapse:collapse}.gap-table th,.gap-table td{border-bottom:1px solid var(--line);padding:7px;text-align:left;font-size:12px}
+.flow{display:flex;align-items:stretch;gap:8px;overflow-x:auto;padding-bottom:6px}.flow-step{flex:0 0 188px;border:1px solid var(--line);border-radius:8px;padding:10px;background:#fff}.flow-step em{display:flex;width:25px;height:25px;border-radius:50%;background:var(--blue2);color:#fff;align-items:center;justify-content:center;font-style:normal;font-weight:800}.flow-step h4{font-size:14px;margin:8px 0 5px}.flow-step p{font-size:12px;color:#475467;min-height:56px;margin:0 0 8px}.flow-step span{font-size:12px;font-weight:800;color:var(--blue2)}.arrow{font-size:22px;color:#98a2b3;line-height:92px;flex:0 0 20px}
+.phase-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.phase{border:1px solid var(--line);border-top:4px solid var(--blue2);border-radius:8px;padding:11px;background:#fff}.phase.p1{border-top-color:var(--red)}.phase.p2{border-top-color:#cf8a00}.phase.p3{border-top-color:var(--green)}.phase div{background:#fff7ed;border:1px solid #fed7aa;border-radius:6px;padding:7px;font-size:12px}.script-box{background:#fbf8ff;border:1px solid #e8d9ff;border-radius:8px;padding:12px;margin-top:9px}.script-box p{margin:7px 0}.empty{text-align:center;padding:44px;color:var(--muted)}
+@media(max-width:900px){body{padding:10px}.topbar{display:block}.stats{grid-template-columns:repeat(2,1fr);margin-top:12px}.two-col,.phase-grid{grid-template-columns:1fr}.client-head{display:block}.amount-box{text-align:left;margin-top:8px}}
+</style></head><body><main class="page">
+<header class="topbar"><div><h1>张迎祥 · 2026-06-30 客户跟进方案</h1><p class="sub">销售日报仪表盘：客户跟进、消费诊断、实验体系、成交动作</p></div><div class="stats"><div class="stat"><span>客户数</span><b>6</b></div><div class="stat"><span>意向金额</span><b>¥0</b></div><div class="stat"><span>客单均值</span><b>¥0</b></div><div class="stat"><span>考核状态</span><b>达标</b></div></div></header>
+
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">待补全 / 待补全</div>
+          <h2>金尚伟 · 金尚伟</h2>
+          <p><span class="tag main">未标注项目类型</span><span class="risk risk-low">低风险</span><span class="tag level">待分级</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥0</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>待分级</strong></div>
+          <p><b>单位/学院/课题组：</b>待补全 / 待补全 / 金尚伟</p>
+          <div class="research-summary">客户画像待补全。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">客户画像待补全。</div></details>
+          <div class="tags"><span class="tag">需补全可推广产品</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>消费结构诊断</span><strong>2026合计 ¥0</strong></div>
+      <p class="muted">2026年至今暂无消费明细，建议先用当日意向产品做试单，再补试剂或测序基础消费。</p>
+      <div class="year-ref">2025全年参考：<b>¥0</b>，仅作去年基数，严禁与2026消费混算。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥0</td><td>空白待破冰</td></tr>
+      <tr><td>业务线缺口</td><td>按上方柱状图判断</td><td>围绕实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：金尚伟需要从当日意向切入，优先把空白业务线转成一次低阻力试单。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>需求确认</h4><p>样本、物种、用途、预算</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>基础服务</h4><p>Sanger、引物、试剂先做低阻力试单</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>组学判断</h4><p>转录组/宏基因组走NGS，默认BGI</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>复杂模板</h4><p>质粒全长/复杂模板推Ultra次日达</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>下游实验</h4><p>基因合成先问清下游再选载体</p><span>扩品</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>成交复盘</h4><p>送样、开票、复购品类写回CRM</p><span>闭环</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-06-30</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-06-30 至 2026-06-30</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-06-30 至 2026-06-30</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥0</strong></div><p>项目类型：<span class="tag main">未标注项目类型</span></p><div class="quote-block">{&#x27;markdown&#x27;: &#x27;质粒构建项目，需要pcdna3.4，把载体表发给他了，他考虑一下。\n&#x27;}</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的未标注项目类型需求和金尚伟的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">待补全 / 待补全</div>
+          <h2>陈萌萌 · 陈萌萌</h2>
+          <p><span class="tag main">未标注项目类型</span><span class="risk risk-low">低风险</span><span class="tag level">待分级</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥0</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>待分级</strong></div>
+          <p><b>单位/学院/课题组：</b>待补全 / 待补全 / 陈萌萌</p>
+          <div class="research-summary">客户画像待补全。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">客户画像待补全。</div></details>
+          <div class="tags"><span class="tag">需补全可推广产品</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>消费结构诊断</span><strong>2026合计 ¥0</strong></div>
+      <p class="muted">2026年至今暂无消费明细，建议先用当日意向产品做试单，再补试剂或测序基础消费。</p>
+      <div class="year-ref">2025全年参考：<b>¥0</b>，仅作去年基数，严禁与2026消费混算。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥0</td><td>空白待破冰</td></tr>
+      <tr><td>业务线缺口</td><td>按上方柱状图判断</td><td>围绕实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：陈萌萌需要从当日意向切入，优先把空白业务线转成一次低阻力试单。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>需求确认</h4><p>样本、物种、用途、预算</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>基础服务</h4><p>Sanger、引物、试剂先做低阻力试单</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>组学判断</h4><p>转录组/宏基因组走NGS，默认BGI</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>复杂模板</h4><p>质粒全长/复杂模板推Ultra次日达</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>下游实验</h4><p>基因合成先问清下游再选载体</p><span>扩品</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>成交复盘</h4><p>送样、开票、复购品类写回CRM</p><span>闭环</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-06-30</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-06-30 至 2026-06-30</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-06-30 至 2026-06-30</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥0</strong></div><p>项目类型：<span class="tag main">未标注项目类型</span></p><div class="quote-block">{&#x27;markdown&#x27;: &#x27;发酵菌液转录组代谢组沟通，目前考虑了一下决定先做代谢组，九个样品。今天催单，今天尽快下单\n&#x27;}</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的未标注项目类型需求和陈萌萌的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">待补全 / 待补全</div>
+          <h2>李红英 · 李红英</h2>
+          <p><span class="tag main">未标注项目类型</span><span class="risk risk-low">低风险</span><span class="tag level">待分级</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥0</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>待分级</strong></div>
+          <p><b>单位/学院/课题组：</b>待补全 / 待补全 / 李红英</p>
+          <div class="research-summary">客户画像待补全。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">客户画像待补全。</div></details>
+          <div class="tags"><span class="tag">需补全可推广产品</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>消费结构诊断</span><strong>2026合计 ¥0</strong></div>
+      <p class="muted">2026年至今暂无消费明细，建议先用当日意向产品做试单，再补试剂或测序基础消费。</p>
+      <div class="year-ref">2025全年参考：<b>¥0</b>，仅作去年基数，严禁与2026消费混算。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥0</td><td>空白待破冰</td></tr>
+      <tr><td>业务线缺口</td><td>按上方柱状图判断</td><td>围绕实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：李红英需要从当日意向切入，优先把空白业务线转成一次低阻力试单。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>需求确认</h4><p>样本、物种、用途、预算</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>基础服务</h4><p>Sanger、引物、试剂先做低阻力试单</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>组学判断</h4><p>转录组/宏基因组走NGS，默认BGI</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>复杂模板</h4><p>质粒全长/复杂模板推Ultra次日达</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>下游实验</h4><p>基因合成先问清下游再选载体</p><span>扩品</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>成交复盘</h4><p>送样、开票、复购品类写回CRM</p><span>闭环</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-06-30</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-06-30 至 2026-06-30</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-06-30 至 2026-06-30</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥0</strong></div><p>项目类型：<span class="tag main">未标注项目类型</span></p><div class="quote-block">{&#x27;markdown&#x27;: &#x27;拟南芥遗传杨树转化，理化检测报价沟通，待跟进\n&#x27;}</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的未标注项目类型需求和李红英的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">待补全 / 待补全</div>
+          <h2>张扬超 · 张扬超</h2>
+          <p><span class="tag main">未标注项目类型</span><span class="risk risk-low">低风险</span><span class="tag level">待分级</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥0</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>待分级</strong></div>
+          <p><b>单位/学院/课题组：</b>待补全 / 待补全 / 张扬超</p>
+          <div class="research-summary">客户画像待补全。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">客户画像待补全。</div></details>
+          <div class="tags"><span class="tag">需补全可推广产品</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>消费结构诊断</span><strong>2026合计 ¥0</strong></div>
+      <p class="muted">2026年至今暂无消费明细，建议先用当日意向产品做试单，再补试剂或测序基础消费。</p>
+      <div class="year-ref">2025全年参考：<b>¥0</b>，仅作去年基数，严禁与2026消费混算。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥0</td><td>空白待破冰</td></tr>
+      <tr><td>业务线缺口</td><td>按上方柱状图判断</td><td>围绕实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：张扬超需要从当日意向切入，优先把空白业务线转成一次低阻力试单。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>需求确认</h4><p>样本、物种、用途、预算</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>基础服务</h4><p>Sanger、引物、试剂先做低阻力试单</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>组学判断</h4><p>转录组/宏基因组走NGS，默认BGI</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>复杂模板</h4><p>质粒全长/复杂模板推Ultra次日达</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>下游实验</h4><p>基因合成先问清下游再选载体</p><span>扩品</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>成交复盘</h4><p>送样、开票、复购品类写回CRM</p><span>闭环</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-06-30</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-06-30 至 2026-06-30</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-06-30 至 2026-06-30</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥0</strong></div><p>项目类型：<span class="tag main">未标注项目类型</span></p><div class="quote-block">{&#x27;markdown&#x27;: &#x27;从去年开始跟进的订单，24个样品做转录组+代谢组，老师还没考虑好，今天先确认说做转录组，先报给客服登记，\n&#x27;}</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的未标注项目类型需求和张扬超的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">待补全 / 待补全</div>
+          <h2>秦英惠/左文琦 · 秦英惠/左文琦</h2>
+          <p><span class="tag main">未标注项目类型</span><span class="risk risk-low">低风险</span><span class="tag level">待分级</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥0</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>待分级</strong></div>
+          <p><b>单位/学院/课题组：</b>待补全 / 待补全 / 秦英惠/左文琦</p>
+          <div class="research-summary">客户画像待补全。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">客户画像待补全。</div></details>
+          <div class="tags"><span class="tag">需补全可推广产品</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>消费结构诊断</span><strong>2026合计 ¥0</strong></div>
+      <p class="muted">2026年至今暂无消费明细，建议先用当日意向产品做试单，再补试剂或测序基础消费。</p>
+      <div class="year-ref">2025全年参考：<b>¥0</b>，仅作去年基数，严禁与2026消费混算。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥0</td><td>空白待破冰</td></tr>
+      <tr><td>业务线缺口</td><td>按上方柱状图判断</td><td>围绕实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：秦英惠/左文琦需要从当日意向切入，优先把空白业务线转成一次低阻力试单。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>需求确认</h4><p>样本、物种、用途、预算</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>基础服务</h4><p>Sanger、引物、试剂先做低阻力试单</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>组学判断</h4><p>转录组/宏基因组走NGS，默认BGI</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>复杂模板</h4><p>质粒全长/复杂模板推Ultra次日达</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>下游实验</h4><p>基因合成先问清下游再选载体</p><span>扩品</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>成交复盘</h4><p>送样、开票、复购品类写回CRM</p><span>闭环</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-06-30</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-06-30 至 2026-06-30</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-06-30 至 2026-06-30</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥0</strong></div><p>项目类型：<span class="tag main">未标注项目类型</span></p><div class="quote-block">{&#x27;markdown&#x27;: &#x27;跟进催单，今天发了订购表，邮寄了干冰过去。\n&#x27;}</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的未标注项目类型需求和秦英惠/左文琦的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">待补全 / 待补全</div>
+          <h2>张然 · 张然</h2>
+          <p><span class="tag main">未标注项目类型</span><span class="risk risk-low">低风险</span><span class="tag level">待分级</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥0</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>待分级</strong></div>
+          <p><b>单位/学院/课题组：</b>待补全 / 待补全 / 张然</p>
+          <div class="research-summary">客户画像待补全。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">客户画像待补全。</div></details>
+          <div class="tags"><span class="tag">需补全可推广产品</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>消费结构诊断</span><strong>2026合计 ¥0</strong></div>
+      <p class="muted">2026年至今暂无消费明细，建议先用当日意向产品做试单，再补试剂或测序基础消费。</p>
+      <div class="year-ref">2025全年参考：<b>¥0</b>，仅作去年基数，严禁与2026消费混算。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥0</td><td>空白待破冰</td></tr>
+      <tr><td>业务线缺口</td><td>按上方柱状图判断</td><td>围绕实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：张然需要从当日意向切入，优先把空白业务线转成一次低阻力试单。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>需求确认</h4><p>样本、物种、用途、预算</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>基础服务</h4><p>Sanger、引物、试剂先做低阻力试单</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>组学判断</h4><p>转录组/宏基因组走NGS，默认BGI</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>复杂模板</h4><p>质粒全长/复杂模板推Ultra次日达</p><span>分流</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>下游实验</h4><p>基因合成先问清下游再选载体</p><span>扩品</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>成交复盘</h4><p>送样、开票、复购品类写回CRM</p><span>闭环</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-06-30</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-06-30 至 2026-06-30</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-06-30 至 2026-06-30</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥0</strong></div><p>项目类型：<span class="tag main">未标注项目类型</span></p><div class="quote-block">{&#x27;markdown&#x27;: &#x27;大概七八百条引物合成订单跟进，今天下单\n&#x27;}</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的未标注项目类型需求和张然的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+</main></body></html>
