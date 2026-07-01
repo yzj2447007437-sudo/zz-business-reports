@@ -1,0 +1,165 @@
+{
+  "date": "2026-07-01",
+  "window": {
+    "t0": 1782835200000,
+    "t1": 1782921600000
+  },
+  "status": "degraded_failed_data_source",
+  "failure": {
+    "stage": "data_source",
+    "reason": "record query BbSLOhG failed: {\n  \"error\": {\n    \"category\": \"api\",\n    \"code\": 1,\n    \"hint\": \"The API returned a business-level error. Check required parameters and values.\",\n    \"message\": \"business error: success=false\",\n    \"operation\": \"tools/call\",\n    \"reason\": \"business_error\",\n    \"retryable\": true,\n    \"server_error_code\": \"TIMEOUT_ERROR\",\n    \"server_key\": \"aitable\",\n    \"trace_id\": \"0b5deb3217829181536158174e08ef\"\n  }\n}\n",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/run_2026_06_24_v4.py\", line 1104, in main\n    records, all_records = load_crm_records()\n  File \"/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/run_2026_06_24_v4.py\", line 293, in load_crm_records\n    records = query_crm_records_for_day()\n  File \"/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/run_2026_06_24_v4.py\", line 283, in query_crm_records_for_day\n    data = parse_json(result, f'record query {CRM_TABLE}')\n  File \"/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/run_2026_06_24_v4.py\", line 169, in parse_json\n    raise RuntimeError(f'{label} failed: {result[\"stderr\"] or result[\"stdout\"]}')\nRuntimeError: record query BbSLOhG failed: {\n  \"error\": {\n    \"category\": \"api\",\n    \"code\": 1,\n    \"hint\": \"The API returned a business-level error. Check required parameters and values.\",\n    \"message\": \"business error: success=false\",\n    \"operation\": \"tools/call\",\n    \"reason\": \"business_error\",\n    \"retryable\": true,\n    \"server_error_code\": \"TIMEOUT_ERROR\",\n    \"server_key\": \"aitable\",\n    \"trace_id\": \"0b5deb3217829181536158174e08ef\"\n  }\n}\n\n"
+  },
+  "summary": {
+    "谷昊南": {
+      "records": 0,
+      "amount": 0
+    },
+    "刘壮": {
+      "records": 0,
+      "amount": 0
+    },
+    "黄洋": {
+      "records": 0,
+      "amount": 0
+    },
+    "张迎祥": {
+      "records": 0,
+      "amount": 0
+    }
+  },
+  "deploy": {
+    "status": "skipped",
+    "reason": "未执行"
+  },
+  "todo": {
+    "status": "skipped",
+    "reason": "未执行"
+  },
+  "dingtalk": {
+    "returncode": 0,
+    "stdout": "{\"errcode\":0,\"errmsg\":\"ok\"}",
+    "stderr": ""
+  },
+  "steps": [
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "base",
+        "get",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--format",
+        "json"
+      ],
+      "stdout": "{\n  \"data\": {\n    \"baseId\": \"AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\",\n    \"baseName\": \"陕豫渝鄂基地CRM客户管理系统\",\n    \"dashboards\": [\n      {\n        \"chartCount\": 13,\n        \"dashboardId\": \"dashboard-1YJooFN2AEQ1NmCG0XfUg\",\n        \"dashboardName\": \"各基地每日日报数量统计图表\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 12,\n        \"dashboardId\": \"dashboard-KcvDq1v26h7EholtWKHyq\",\n        \"dashboardName\": \"各基地客户数量统计\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 19,\n        \"dashboardId\": \"cPxGvX3CO6JTXE2uhhj9c\",\n        \"dashboardName\": \"郑州基地销售跟进仪表盘\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 24,\n        \"dashboardId\": \"dashboard-gJr4SQbKocE4JUqiFAyj7\",\n        \"dashboardName\": \"西安基地销售跟进仪表盘\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 20,\n        \"dashboardId\": \"dashboard-XEtpxBfCxy5ygtcfMoHt7\",\n        \"dashboardName\": \"武汉基地销售跟进仪表盘\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 12,\n        \"dashboardId\": \"dashboard-OyN91q9DijvTxzPSLMtJT\",\n        \"dashboardName\": \"重庆基地销售跟进仪表盘\",\n        \"meta\": {}\n      },\n      {\n        \"chartCount\": 0,\n        \"dashboardId\": \"dashboard-NlTIvJNS5kpwho8pLcRWW\",\n        \"dashboardName\": \"仪表盘\",\n        \"meta\": {}\n      }\n    ],\n    \"documents\": [\n      {\n        \"documentId\": \"Y1OQX0akWm344LyMiYbk0a6BJGlDd3mE\",\n        \"documentName\": \"快速上手客户管理系统\"\n      }\n    ],\n    \"tables\": [\n      {\n        \"tableId\": \"uiEuhvv\",\n        \"tableName\": \"西安基地课题组消费明细 (2026.5月)\"\n      },\n      {\n        \"tableId\": \"dv19yqvsgs3oebp3pcjys\",\n        \"tableName\": \"西安基地客户CRM（日报更新）\"\n      },\n      {\n        \"tableId\": \"c3sqzs9v7ll1c720crna8\",\n        \"tableName\": \"📝客户跟进记录（西安）\"\n      },\n      {\n        \"tableId\": \"qGJsTRG\",\n        \"tableName\": \"武汉基地课题组消费明细（2025年全年）\"\n      },\n      {\n        \"tableId\": \"E1GyUKu\",\n        \"tableName\": \"武汉基地客户CRM（日报更新）\"\n      },\n      {\n        \"tableId\": \"qSbB4tu\",\n        \"tableName\": \"📝客户跟进记录 (武汉)\"\n      },\n      {\n        \"tableId\": \"r6MtTh1\",\n        \"tableName\": \"重庆基地课题组消费明细（2026年1-5月）\"\n      },\n      {\n        \"tableId\": \"5N3Naat\",\n        \"tableName\": \"重庆基地客户CRM（日报更新）\"\n      },\n      {\n        \"tableId\": \"HPxrqtq\",\n        \"tableName\": \"📝客户跟进记录 (重庆)\"\n      },\n      {\n        \"tableId\": \"qH4EiYm\",\n        \"tableName\": \"郑州基地课题组消费明细（2026.5月）\"\n      },\n      {\n        \"tableId\": \"LOVz6n3\",\n        \"tableName\": \"郑州基地客户CRM（日报更新）\"\n      },\n      {\n        \"tableId\": \"BbSLOhG\",\n        \"tableName\": \"📝客户跟进记录 (郑州)\"\n      },\n      {\n        \"tableId\": \"h8ebvtdqh3ewf8lspi6qh\",\n        \"tableName\": \"👨‍💼销售人员管理\"\n      },\n      {\n        \"tableId\": \"ADIKuSx\",\n        \"tableName\": \"重庆工业客户筛选\"\n      },\n      {\n        \"tableId\": \"a3E4TuA\",\n        \"tableName\": \"郑州基地工业客户名册\"\n      },\n      {\n        \"tableId\": \"37nHHgJ\",\n        \"tableName\": \"西安工业客户筛选\"\n      },\n      {\n        \"tableId\": \"tM9G432\",\n        \"tableName\": \"重庆跟进记录备份\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Got base '陕豫渝鄂基地CRM客户管理系统' with 17 table(s). URL rules: AI 表格访问地址: https://docs.dingtalk.com/i/nodes/{baseId}; AI 表格数据表访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=sheetId%3D{tableId}; AI 表格仪表盘访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=applicationId%3D{dashboardId}; AI 表格说明文档地址: https://pre-alidocs.dingtalk.com/i/nodes/{baseId}?iframeQuery=applicationId%3D{documentId}. User-facing guidance: 面向用户时要以人为本、友好直观，优先展示 **实体名称**、可点击链接和必要上下文，尽量隐藏 `baseId`、`tableId`、`viewId`、`dashboardId`、`documentId` 等技术细节；除非用户明确索要或排障必须，否则不要直接呈现这些 ID。\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "table",
+        "get",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-ids",
+        "BbSLOhG,LOVz6n3,qH4EiYm",
+        "--format",
+        "json"
+      ],
+      "stdout": "cdv\",\n            \"fieldName\": \"优先级\",\n            \"type\": \"singleSelect\"\n          },\n          {\n            \"description\": \"自动更新\",\n            \"fieldId\": \"Eje4qk3\",\n            \"fieldName\": \"更新人\",\n            \"type\": \"lastModifier\"\n          },\n          {\n            \"fieldId\": \"ISTMwng\",\n            \"fieldName\": \"学院/职位\",\n            \"type\": \"text\"\n          }\n        ],\n        \"tableId\": \"LOVz6n3\",\n        \"tableName\": \"郑州基地客户CRM（日报更新）\",\n        \"views\": [\n          {\n            \"type\": \"Grid\",\n            \"viewId\": \"62RPGUr\",\n            \"viewName\": \"今日待跟进客户\"\n          },\n          {\n            \"type\": \"Grid\",\n            \"viewId\": \"6KJHukQ\",\n            \"viewName\": \"本周新增客户\"\n          },\n          {\n            \"type\": \"FormDesigner\",\n            \"viewId\": \"hJ4PEf1\",\n            \"viewName\": \"新增课题组录入\"\n          },\n          {\n            \"type\": \"Grid\",\n            \"viewId\": \"EdwPhNp\",\n            \"viewName\": \"客户总表\"\n          }\n        ]\n      },\n      {\n        \"fields\": [\n          {\n            \"fieldId\": \"TKGiRfN\",\n            \"fieldName\": \"课题组\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"e2IEiYd\",\n            \"fieldName\": \"质粒抽提\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"hBa9FHa\",\n            \"fieldName\": \"遗传转化类\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"LyV53Xp\",\n            \"fieldName\": \"修饰引物\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"Yca67Fw\",\n            \"fieldName\": \"项目\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"fgT6gLq\",\n            \"fieldName\": \"商城\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"0hcqOHM\",\n            \"fieldName\": \"普通引物\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"ps3rEtV\",\n            \"fieldName\": \"基因\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"Nr3t7LP\",\n            \"fieldName\": \"分子试剂\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"6hnZWq7\",\n            \"fieldName\": \"蛋白表达\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"nvnc17G\",\n            \"fieldName\": \"测序高\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"fHKpnOA\",\n            \"fieldName\": \"病毒包装\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"ssWCdUy\",\n            \"fieldName\": \"sanger测序\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"Avbm00W\",\n            \"fieldName\": \"RNA\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"Ut5jbfr\",\n            \"fieldName\": \"Micro测序\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"A2a80hy\",\n            \"fieldName\": \"开票单位\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"dExCqdU\",\n            \"fieldName\": \"业 务 员\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"Vn2IoBj\",\n            \"fieldName\": \"2025销售额\",\n            \"type\": \"text\"\n          },\n          {\n            \"fieldId\": \"dgepwTe\",\n            \"fieldName\": \"总计\",\n            \"type\": \"text\"\n          }\n        ],\n        \"tableId\": \"qH4EiYm\",\n        \"tableName\": \"郑州基地课题组消费明细（2026.5月）\",\n        \"views\": [\n          {\n            \"type\": \"Grid\",\n            \"viewId\": \"adS1WG1\",\n            \"viewName\": \"表格\"\n          }\n        ]\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Got 3 tables from base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3. URL rules: AI 表格数据表访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=sheetId%3D{tableId}; AI 表格视图访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=sheetId%3D{tableId}%26viewId%3D{viewId}. User-facing guidance: 面向用户时要以人为本、友好直观，优先展示 **实体名称**、可点击链接和必要上下文，尽量隐藏 `baseId`、`tableId`、`viewId`、`dashboardId`、`documentId` 等技术细节；除非用户明确索要或排障必须，否则不要直接呈现这些 ID。\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json"
+      ],
+      "stdout": "\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"基因合成已下单\\n\"\n          },\n          \"ErzrrTS\": \"1953\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"1JTQBZcq45\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"杜灵思\"\n        },\n        \"recordId\": \"2NmiHAriN3\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-31T15:31:54+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"ys56oa05Nh\",\n              \"name\": \"分子项目\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"分子互作项目，有三个及基因要合成，罗晓玲已经在和老师沟通了。\\n\"\n          },\n          \"ErzrrTS\": \"4500\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"GdGhvsakhg\"\n            ]\n          },\n          \"ici3eUR\": \"烟草研究院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"平文丽\"\n        },\n        \"recordId\": \"2RUScjdDxo\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-05T20:00:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"216932301824574583\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"老师自己扩增不出来，推荐提取扩增 测序项目。\\n\"\n          },\n          \"ici3eUR\": \"工业客户\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"刘梦龙\"\n        },\n        \"recordId\": \"2RZw2T6Ph7\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-08T21:04:47+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"高通量测序，近期没有需求，后期可能会做全外显子测序\\n\"\n          },\n          \"ErzrrTS\": \"4000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"1omkUcOsjV\"\n            ]\n          },\n          \"ici3eUR\": \"河南省人民医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"周帅\"\n        },\n        \"recordId\": \"2S0A3j1GML\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-06-29T21:50:42+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"过表达慢病毒，已沟通发送邮件评估报价\\n\"\n          },\n          \"ErzrrTS\": \"4500\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"KTJwrU7pxa\"\n            ]\n          },\n          \"ici3eUR\": \"药学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"朱金蔓\"\n        },\n        \"recordId\": \"2SysqCQjm8\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-17T21:15:37+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"病毒包装，已沟通发送邮件下单，已成单\\n\"\n          },\n          \"ErzrrTS\": \"2500\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"IUGRNIpzW2\"\n            ]\n          },\n          \"ici3eUR\": \"阜外医院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"吕亚冰\"\n        },\n        \"recordId\": \"2VdMtEmeXl\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "2VdMtEmeXl"
+      ],
+      "stdout": "     },\n        \"recordId\": \"5n65hLNImj\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-10T18:39:00+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17512563908773511\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"WLduEAxfdS\",\n              \"name\": \"基因调控\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"四条FAM修饰siRNA，报价370一条\\n\"\n          },\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"zKWxncl6Mr\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"边传红\"\n        },\n        \"recordId\": \"5pIibhXr1x\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-03-18T21:24:20+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"BLy8S2ksaE\",\n              \"name\": \"基因合成\"\n            },\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"推广试剂活动，了解到老师目前有构建质粒以及转录组测序的需求\\n\"\n          },\n          \"ErzrrTS\": \"5000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"7PHFZuv5cg\"\n            ]\n          },\n          \"ici3eUR\": \"医学科学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"程坷\"\n        },\n        \"recordId\": \"5q0ckjomOj\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-21T21:59:18+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"17031190675928446\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"YlwHsVmXob\",\n              \"name\": \"催款/开票\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"整理课题组消费明细以及预存明细，核对账单，跟进预存回款\\n\"\n          },\n          \"ErzrrTS\": \"100000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"YUoo2RvT3B\"\n            ]\n          },\n          \"ici3eUR\": \"龙湖现代免疫实验室\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王海丽\"\n        },\n        \"recordId\": \"5vPSCzAdE9\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-07-01T20:16:29+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"9v98geBsLy\",\n              \"name\": \"高通量产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"预计2-3周老师取样后安排测序取样。华大不分析报价139元，分析报价189元。预计样品数80份。\\n\"\n          },\n          \"ErzrrTS\": \"11120\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"XZeSUhveON\"\n            ]\n          },\n          \"ici3eUR\": \"农学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"马晨辉\"\n        },\n        \"recordId\": \"61ZnZgXTve\"\n      },\n      {\n        \"cells\": {\n          \"6fQN7MB\": \"2026-04-07T17:24:57+08:00\",\n          \"6skKX5X\": [\n            {\n              \"corpId\": \"ding2da3934cef5290fc35c2f4657eb6378f\",\n              \"userId\": \"16255298572921921\"\n            }\n          ],\n          \"8Bxm6RV\": [\n            {\n              \"id\": \"yyLFrLS1TK\",\n              \"name\": \"试剂产品\"\n            }\n          ],\n          \"EV9Eu5P0r2\": {\n            \"markdown\": \"现在课题组分开，有采购一套移液器的意向，心理价位300元一支。试剂有marker和琼脂糖的意向。\\n\"\n          },\n          \"ErzrrTS\": \"3000\",\n          \"H8m21AJ\": {\n            \"linkedRecordIds\": [\n              \"JGW2bBfR4R\"\n            ]\n          },\n          \"ici3eUR\": \"植物保护学院\",\n          \"pdb639c8ozcv0t5uqi5xh\": \"王子明\"\n        },\n        \"recordId\": \"69bPCblqO0\"\n      }\n    ]\n  },\n  \"error\": {},\n  \"meta\": {},\n  \"status\": \"success\",\n  \"summary\": \"Successfully queried 100 record(s) from table BbSLOhG in base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3\"\n}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "kind": "dws",
+      "cmd": [
+        "/Users/youzijian/.workbuddy/binaries/node/cli-connector-packages/lib/node_modules/dingtalk-workspace-cli/vendor/dws",
+        "aitable",
+        "record",
+        "query",
+        "--base-id",
+        "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+        "--table-id",
+        "BbSLOhG",
+        "--limit",
+        "100",
+        "--field-ids",
+        "pdb639c8ozcv0t5uqi5xh,6skKX5X,EV9Eu5P0r2,ici3eUR,ErzrrTS,6fQN7MB,H8m21AJ,8Bxm6RV",
+        "--format",
+        "json",
+        "--cursor",
+        "69bPCblqO0"
+      ],
+      "stdout": "",
+      "stderr": "{\n  \"error\": {\n    \"category\": \"api\",\n    \"code\": 1,\n    \"hint\": \"The API returned a business-level error. Check required parameters and values.\",\n    \"message\": \"business error: success=false\",\n    \"operation\": \"tools/call\",\n    \"reason\": \"business_error\",\n    \"retryable\": true,\n    \"server_error_code\": \"TIMEOUT_ERROR\",\n    \"server_key\": \"aitable\",\n    \"trace_id\": \"0b5deb3217829181536158174e08ef\"\n  }\n}\n",
+      "returncode": 1
+    },
+    {
+      "step": "data_source",
+      "status": "failed",
+      "at": "2026-07-01T23:02:33.554244+08:00",
+      "stage": "data_source",
+      "reason": "record query BbSLOhG failed: {\n  \"error\": {\n    \"category\": \"api\",\n    \"code\": 1,\n    \"hint\": \"The API returned a business-level error. Check required parameters and values.\",\n    \"message\": \"business error: success=false\",\n    \"operation\": \"tools/call\",\n    \"reason\": \"business_error\",\n    \"retryable\": true,\n    \"server_error_code\": \"TIMEOUT_ERROR\",\n    \"server_key\": \"aitable\",\n    \"trace_id\": \"0b5deb3217829181536158174e08ef\"\n  }\n}\n",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/run_2026_06_24_v4.py\", line 1104, in main\n    records, all_records = load_crm_records()\n  File \"/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/run_2026_06_24_v4.py\", line 293, in load_crm_records\n    records = query_crm_records_for_day()\n  File \"/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/run_2026_06_24_v4.py\", line 283, in query_crm_records_for_day\n    data = parse_json(result, f'record query {CRM_TABLE}')\n  File \"/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/run_2026_06_24_v4.py\", line 169, in parse_json\n    raise RuntimeError(f'{label} failed: {result[\"stderr\"] or result[\"stdout\"]}')\nRuntimeError: record query BbSLOhG failed: {\n  \"error\": {\n    \"category\": \"api\",\n    \"code\": 1,\n    \"hint\": \"The API returned a business-level error. Check required parameters and values.\",\n    \"message\": \"business error: success=false\",\n    \"operation\": \"tools/call\",\n    \"reason\": \"business_error\",\n    \"retryable\": true,\n    \"server_error_code\": \"TIMEOUT_ERROR\",\n    \"server_key\": \"aitable\",\n    \"trace_id\": \"0b5deb3217829181536158174e08ef\"\n  }\n}\n\n"
+    },
+    {
+      "kind": "dingtalk",
+      "cmd": [],
+      "stdout": "{\"errcode\":0,\"errmsg\":\"ok\"}",
+      "stderr": "",
+      "returncode": 0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "msgtype": "markdown",
+  "markdown": {
+    "title": "郑州基地销售日报分析 | 2026-07-01",
+    "text": "## 📋 郑州基地销售日报分析 | 2026-07-01\n\n流程状态：降级完成\n失败阶段：data_source\n失败原因：record query BbSLOhG failed: {\n  \"error\": {\n    \"category\": \"api\",\n    \"code\": 1,\n    \"hint\": \"The API returned a business-level error. Check required parameters and values.\",\n    \"message\": \"business error: success=false\",\n    \"operation\": \"tools/call\",\n    \"reason\": \"business_error\",\n    \"retryable\": true,\n    \"server_error_code\": \"TIMEOUT_ERROR\",\n    \"server_key\": \"aitable\",\n    \"trace_id\": \"0b5deb3217829181536158174e08ef\"\n  }\n}\n\n\n### 今日汇总\n| 销售 | 客户数 | 意向金额 |\n|---|---:|---:|\n| 谷昊南 | 0 | ¥0 |\n| 刘壮 | 0 | ¥0 |\n| 黄洋 | 0 | ¥0 |\n| 张迎祥 | 0 | ¥0 |\n\nGitHub Pages状态：skipped；原因：未执行\n待办创建状态：skipped；原因：未执行\n本地日志目录：/Users/youzijian/WorkBuddy/2026-05-25-20-52-14/daily_reports/2026-07-01\n"
+  },
+  "at": {
+    "isAtAll": true
+  }
+}
