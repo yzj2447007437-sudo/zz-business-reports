@@ -1,0 +1,130 @@
+{
+  "data": {
+    "baseId": "AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3",
+    "baseName": "陕豫渝鄂基地CRM客户管理系统",
+    "dashboards": [
+      {
+        "chartCount": 13,
+        "dashboardId": "dashboard-1YJooFN2AEQ1NmCG0XfUg",
+        "dashboardName": "各基地每日日报数量统计图表",
+        "meta": {}
+      },
+      {
+        "chartCount": 12,
+        "dashboardId": "dashboard-KcvDq1v26h7EholtWKHyq",
+        "dashboardName": "各基地客户数量统计",
+        "meta": {}
+      },
+      {
+        "chartCount": 19,
+        "dashboardId": "cPxGvX3CO6JTXE2uhhj9c",
+        "dashboardName": "郑州基地销售跟进仪表盘",
+        "meta": {}
+      },
+      {
+        "chartCount": 24,
+        "dashboardId": "dashboard-gJr4SQbKocE4JUqiFAyj7",
+        "dashboardName": "西安基地销售跟进仪表盘",
+        "meta": {}
+      },
+      {
+        "chartCount": 20,
+        "dashboardId": "dashboard-XEtpxBfCxy5ygtcfMoHt7",
+        "dashboardName": "武汉基地销售跟进仪表盘",
+        "meta": {}
+      },
+      {
+        "chartCount": 12,
+        "dashboardId": "dashboard-OyN91q9DijvTxzPSLMtJT",
+        "dashboardName": "重庆基地销售跟进仪表盘",
+        "meta": {}
+      },
+      {
+        "chartCount": 0,
+        "dashboardId": "dashboard-NlTIvJNS5kpwho8pLcRWW",
+        "dashboardName": "仪表盘",
+        "meta": {}
+      }
+    ],
+    "documents": [
+      {
+        "documentId": "Y1OQX0akWm344LyMiYbk0a6BJGlDd3mE",
+        "documentName": "快速上手客户管理系统"
+      }
+    ],
+    "tables": [
+      {
+        "tableId": "uiEuhvv",
+        "tableName": "西安基地课题组消费明细 (2026.5月)"
+      },
+      {
+        "tableId": "dv19yqvsgs3oebp3pcjys",
+        "tableName": "西安基地客户CRM（日报更新）"
+      },
+      {
+        "tableId": "c3sqzs9v7ll1c720crna8",
+        "tableName": "📝客户跟进记录（西安）"
+      },
+      {
+        "tableId": "qGJsTRG",
+        "tableName": "武汉基地课题组消费明细（2025年全年）"
+      },
+      {
+        "tableId": "E1GyUKu",
+        "tableName": "武汉基地客户CRM（日报更新）"
+      },
+      {
+        "tableId": "qSbB4tu",
+        "tableName": "📝客户跟进记录 (武汉)"
+      },
+      {
+        "tableId": "r6MtTh1",
+        "tableName": "重庆基地课题组消费明细（2026年1-5月）"
+      },
+      {
+        "tableId": "5N3Naat",
+        "tableName": "重庆基地客户CRM（日报更新）"
+      },
+      {
+        "tableId": "HPxrqtq",
+        "tableName": "📝客户跟进记录 (重庆)"
+      },
+      {
+        "tableId": "qH4EiYm",
+        "tableName": "郑州基地课题组消费明细（2026.6月）"
+      },
+      {
+        "tableId": "LOVz6n3",
+        "tableName": "郑州基地客户CRM（日报更新）"
+      },
+      {
+        "tableId": "BbSLOhG",
+        "tableName": "📝客户跟进记录 (郑州)"
+      },
+      {
+        "tableId": "h8ebvtdqh3ewf8lspi6qh",
+        "tableName": "👨‍💼销售人员管理"
+      },
+      {
+        "tableId": "ADIKuSx",
+        "tableName": "重庆工业客户筛选"
+      },
+      {
+        "tableId": "a3E4TuA",
+        "tableName": "郑州基地工业客户名册"
+      },
+      {
+        "tableId": "37nHHgJ",
+        "tableName": "西安工业客户筛选"
+      },
+      {
+        "tableId": "tM9G432",
+        "tableName": "重庆跟进记录备份"
+      }
+    ]
+  },
+  "error": {},
+  "meta": {},
+  "status": "success",
+  "summary": "Got base '陕豫渝鄂基地CRM客户管理系统' with 17 table(s). URL rules: AI 表格访问地址: https://docs.dingtalk.com/i/nodes/{baseId}; AI 表格数据表访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=sheetId%3D{tableId}; AI 表格仪表盘访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=applicationId%3D{dashboardId}; AI 表格说明文档地址: https://pre-alidocs.dingtalk.com/i/nodes/{baseId}?iframeQuery=applicationId%3D{documentId}. User-facing guidance: 面向用户时要以人为本、友好直观，优先展示 **实体名称**、可点击链接和必要上下文，尽量隐藏 `baseId`、`tableId`、`viewId`、`dashboardId`、`documentId` 等技术细节；除非用户明确索要或排障必须，否则不要直接呈现这些 ID。"
+}
