@@ -1,0 +1,319 @@
+{
+  "data": {
+    "tables": [
+      {
+        "fields": [
+          {
+            "fieldId": "pdb639c8ozcv0t5uqi5xh",
+            "fieldName": "对接人",
+            "type": "text"
+          },
+          {
+            "fieldId": "li0gbjs7m99cpxukypml7",
+            "fieldName": "跟进形式",
+            "type": "singleSelect"
+          },
+          {
+            "fieldId": "z0g0j0ej7u5lgwhfx9lca",
+            "fieldName": "跟进照片",
+            "type": "attachment"
+          },
+          {
+            "fieldId": "nxegapub7w7iyvg9l8fx9",
+            "fieldName": "跟进闪记链接",
+            "type": "url"
+          },
+          {
+            "fieldId": "6skKX5X",
+            "fieldName": "销售人员",
+            "type": "user"
+          },
+          {
+            "fieldId": "5MWAatf",
+            "fieldName": "陪同人员",
+            "type": "user"
+          },
+          {
+            "fieldId": "EV9Eu5P0r2",
+            "fieldName": "跟进内容",
+            "type": "richText"
+          },
+          {
+            "fieldId": "PPwmp8l",
+            "fieldName": "对接职位",
+            "type": "multipleSelect"
+          },
+          {
+            "fieldId": "ici3eUR",
+            "fieldName": "学院",
+            "type": "text"
+          },
+          {
+            "fieldId": "8stXHOZ",
+            "fieldName": "位置",
+            "type": "geolocation"
+          },
+          {
+            "fieldId": "ErzrrTS",
+            "fieldName": "意向金额",
+            "type": "number"
+          },
+          {
+            "fieldId": "6fQN7MB",
+            "fieldName": "跟进日期",
+            "type": "date"
+          },
+          {
+            "fieldId": "H8m21AJ",
+            "fieldName": "课题组",
+            "type": "bidirectionalLink"
+          },
+          {
+            "fieldId": "1HH4RYc",
+            "fieldName": "需求（销售对直属上级的需求）",
+            "type": "richText"
+          },
+          {
+            "fieldId": "8Bxm6RV",
+            "fieldName": "项目类型",
+            "type": "multipleSelect"
+          },
+          {
+            "fieldId": "M1cGkso",
+            "fieldName": "关联引用",
+            "type": "lookup"
+          }
+        ],
+        "tableId": "BbSLOhG",
+        "tableName": "📝客户跟进记录 (郑州)",
+        "views": [
+          {
+            "type": "Grid",
+            "viewId": "oOEMtfo",
+            "viewName": "跟进记录"
+          },
+          {
+            "type": "FormDesigner",
+            "viewId": "Afj5gkN",
+            "viewName": "跟进记录填写"
+          }
+        ]
+      },
+      {
+        "fields": [
+          {
+            "fieldId": "jxzfinmckxuusjowbz5ca",
+            "fieldName": "课题组",
+            "type": "text"
+          },
+          {
+            "fieldId": "5bru2trwv2ptkohlnz53s",
+            "fieldName": "可推广产品",
+            "type": "text"
+          },
+          {
+            "description": "即2025年课题组全年消费额度",
+            "fieldId": "crz3i1wi7dnmsn7xirzap",
+            "fieldName": "课题组规模",
+            "type": "number"
+          },
+          {
+            "fieldId": "g20kh388t2e3gbvm5w3ko",
+            "fieldName": "客户名称是否有重复",
+            "type": "filterUp"
+          },
+          {
+            "fieldId": "nwlnalxkb18mah2qh2ap0",
+            "fieldName": "最近跟进时间",
+            "type": "lastModifiedTime"
+          },
+          {
+            "fieldId": "fdm21r308sb03l2yzkkw7",
+            "fieldName": "销售员",
+            "type": "user"
+          },
+          {
+            "fieldId": "npduasf6eesbx6pe9r8vu",
+            "fieldName": "销售区域",
+            "type": "filterUp"
+          },
+          {
+            "description": "与客户跟进记录（郑州）互通",
+            "fieldId": "ltl4xQ3",
+            "fieldName": "客户跟进记录",
+            "type": "bidirectionalLink"
+          },
+          {
+            "fieldId": "nxpU4ly",
+            "fieldName": "未联系天数",
+            "type": "formula"
+          },
+          {
+            "description": "AI未检索到信息的大概率是因为课题组非PI或者教授/副教授/副研究员的职称",
+            "fieldId": "a8gJCGq",
+            "fieldName": "课题组研究方向/国自然审查",
+            "type": "text"
+          },
+          {
+            "fieldId": "W3etxe7",
+            "fieldName": "客户单位",
+            "type": "text"
+          },
+          {
+            "description": "S为25年年度T20课题组；T1为年消费8万-5万课题组；T2为年消费5万-3万课题组；T3为年消费3万-1万课题组；T4为年消费1万-5千课题组，T5为年消费5千以下课题组",
+            "fieldId": "WjhLcdv",
+            "fieldName": "优先级",
+            "type": "singleSelect"
+          },
+          {
+            "description": "自动更新",
+            "fieldId": "Eje4qk3",
+            "fieldName": "更新人",
+            "type": "lastModifier"
+          },
+          {
+            "fieldId": "ISTMwng",
+            "fieldName": "学院/职位",
+            "type": "text"
+          }
+        ],
+        "tableId": "LOVz6n3",
+        "tableName": "郑州基地客户CRM（日报更新）",
+        "views": [
+          {
+            "type": "Grid",
+            "viewId": "62RPGUr",
+            "viewName": "今日待跟进客户"
+          },
+          {
+            "type": "Grid",
+            "viewId": "6KJHukQ",
+            "viewName": "本周新增客户"
+          },
+          {
+            "type": "FormDesigner",
+            "viewId": "hJ4PEf1",
+            "viewName": "新增课题组录入"
+          },
+          {
+            "type": "Grid",
+            "viewId": "EdwPhNp",
+            "viewName": "客户总表"
+          }
+        ]
+      },
+      {
+        "fields": [
+          {
+            "fieldId": "TKGiRfN",
+            "fieldName": "课题组",
+            "type": "text"
+          },
+          {
+            "fieldId": "e2IEiYd",
+            "fieldName": "质粒抽提",
+            "type": "text"
+          },
+          {
+            "fieldId": "hBa9FHa",
+            "fieldName": "遗传转化类",
+            "type": "text"
+          },
+          {
+            "fieldId": "LyV53Xp",
+            "fieldName": "修饰引物",
+            "type": "text"
+          },
+          {
+            "fieldId": "Yca67Fw",
+            "fieldName": "项目",
+            "type": "text"
+          },
+          {
+            "fieldId": "fgT6gLq",
+            "fieldName": "商城",
+            "type": "text"
+          },
+          {
+            "fieldId": "0hcqOHM",
+            "fieldName": "普通引物",
+            "type": "text"
+          },
+          {
+            "fieldId": "ps3rEtV",
+            "fieldName": "基因",
+            "type": "text"
+          },
+          {
+            "fieldId": "Nr3t7LP",
+            "fieldName": "分子试剂",
+            "type": "text"
+          },
+          {
+            "fieldId": "6hnZWq7",
+            "fieldName": "蛋白表达",
+            "type": "text"
+          },
+          {
+            "fieldId": "nvnc17G",
+            "fieldName": "测序高",
+            "type": "text"
+          },
+          {
+            "fieldId": "fHKpnOA",
+            "fieldName": "病毒包装",
+            "type": "text"
+          },
+          {
+            "fieldId": "ssWCdUy",
+            "fieldName": "sanger测序",
+            "type": "text"
+          },
+          {
+            "fieldId": "Avbm00W",
+            "fieldName": "RNA",
+            "type": "text"
+          },
+          {
+            "fieldId": "Ut5jbfr",
+            "fieldName": "Micro测序",
+            "type": "text"
+          },
+          {
+            "fieldId": "A2a80hy",
+            "fieldName": "开票单位",
+            "type": "text"
+          },
+          {
+            "fieldId": "dExCqdU",
+            "fieldName": "业 务 员",
+            "type": "text"
+          },
+          {
+            "fieldId": "Vn2IoBj",
+            "fieldName": "2025销售额",
+            "type": "text"
+          },
+          {
+            "fieldId": "dgepwTe",
+            "fieldName": "总计",
+            "type": "text"
+          }
+        ],
+        "tableId": "qH4EiYm",
+        "tableName": "郑州基地课题组消费明细（2026.6月）",
+        "views": [
+          {
+            "type": "Grid",
+            "viewId": "adS1WG1",
+            "viewName": "表格"
+          }
+        ]
+      }
+    ]
+  },
+  "error": {},
+  "meta": {},
+  "status": "success",
+  "summary": "Got 3 tables from base AR4GpnMqJzM99l2RIKkNPpKvVKe0xjE3. URL rules: AI 表格数据表访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=sheetId%3D{tableId}; AI 表格视图访问地址: https://docs.dingtalk.com/i/nodes/{baseId}?iframeQuery=sheetId%3D{tableId}%26viewId%3D{viewId}. User-facing guidance: 面向用户时要以人为本、友好直观，优先展示 **实体名称**、可点击链接和必要上下文，尽量隐藏 `baseId`、`tableId`、`viewId`、`dashboardId`、`documentId` 等技术细节；除非用户明确索要或排障必须，否则不要直接呈现这些 ID。"
+}
