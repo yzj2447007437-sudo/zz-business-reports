@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>刘壮_2026-07-03_客户跟进方案</title>
+<style>
+:root{--bg:#f4f6f9;--card:#fff;--ink:#1f2937;--muted:#667085;--line:#e5e7eb;--blue:#113b72;--blue2:#2457a6;--red:#b42318;--amber:#b76e00;--green:#167a45;--purple:#7b4bb2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;font-size:14px;line-height:1.55;padding:16px}.page{max-width:1480px;margin:0 auto}
+.topbar{background:#102f5d;color:#fff;border-radius:10px;padding:20px 22px;margin-bottom:14px;display:flex;justify-content:space-between;gap:18px;align-items:flex-end}h1{font-size:24px;margin:0 0 6px}.sub{color:#c9d7ea;margin:0}
+.stats{display:grid;grid-template-columns:repeat(4,120px);gap:10px}.stat{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);border-radius:8px;padding:9px}.stat span{display:block;color:#c9d7ea;font-size:12px}.stat b{font-size:18px}
+.client-card{background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 22px rgba(15,23,42,.05);padding:15px;margin:12px 0}.client-head{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:10px}.eyebrow{font-size:12px;color:var(--muted);margin-bottom:3px}h2{font-size:20px;margin:0 0 7px}h3{font-size:15px;margin:0 0 8px}
+.amount-box{background:#fff5f5;border:1px solid #ffd2cf;border-radius:8px;min-width:132px;text-align:right;padding:9px 12px}.amount-box span{display:block;color:#912018;font-size:12px}.amount-box strong{font-size:22px;color:var(--red)}.quick-action{border-left:4px solid var(--blue2);background:#f8fafc;border-radius:8px;padding:10px 12px;font-weight:700;margin-bottom:10px}
+.tag,.risk{display:inline-flex;align-items:center;border-radius:999px;padding:3px 9px;margin:2px;border:1px solid #d8e4fb;background:#eef5ff;color:#174a8b;font-size:12px;max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tag.main{background:#eef5ff;color:#174a8b}.tag.level{background:#f8fafc;color:#475467;border-color:#e5e7eb}.risk-high{color:var(--red);font-weight:800}.risk-mid{color:var(--amber);font-weight:800}.risk-low{color:var(--green);font-weight:800}.two-col{display:grid;grid-template-columns:1.08fr .92fr;gap:12px}
+.panel{border:1px solid var(--line);border-radius:8px;background:#fff;padding:12px;margin:8px 0}.section-title{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:9px}.section-title span{font-weight:800;font-size:15px}.section-title strong{font-size:12px;color:var(--muted)}
+.research-summary{background:#f5f9ff;border-left:4px solid var(--blue2);border-radius:6px;padding:10px 12px}details{margin-top:9px;color:var(--muted)}summary{cursor:pointer}.quote-block{background:#f8fafc;border-left:4px solid var(--blue2);border-radius:6px;padding:10px;white-space:pre-wrap;max-height:240px;overflow:auto}
+.tags{margin-top:9px}.consume-row{display:grid;grid-template-columns:94px 1fr 72px;gap:8px;align-items:center;margin:7px 0}.consume-row span{font-size:12px;text-align:right;color:#475467}.consume-row div{height:16px;background:#eef1f5;border-radius:99px;overflow:hidden}.consume-row i{display:block;height:100%;border-radius:99px}.consume-row b{text-align:right;font-size:12px}
+.year-ref,.finding{background:#fff8e6;border:1px solid #f4d28a;border-radius:6px;padding:8px;margin:8px 0}.finding{background:#f0f9ff;border-color:#b8e1f4;color:#164e63}.muted{color:var(--muted)}.gap-table{width:100%;border-collapse:collapse}.gap-table th,.gap-table td{border-bottom:1px solid var(--line);padding:7px;text-align:left;font-size:12px}
+.flow{display:flex;align-items:stretch;gap:8px;overflow-x:auto;padding-bottom:6px}.flow-step{flex:0 0 188px;border:1px solid var(--line);border-radius:8px;padding:10px;background:#fff}.flow-step em{display:flex;width:25px;height:25px;border-radius:50%;background:var(--blue2);color:#fff;align-items:center;justify-content:center;font-style:normal;font-weight:800}.flow-step h4{font-size:14px;margin:8px 0 5px}.flow-step p{font-size:12px;color:#475467;min-height:56px;margin:0 0 8px}.flow-step span{font-size:12px;font-weight:800;color:var(--blue2)}.arrow{font-size:22px;color:#98a2b3;line-height:92px;flex:0 0 20px}
+.phase-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.phase{border:1px solid var(--line);border-top:4px solid var(--blue2);border-radius:8px;padding:11px;background:#fff}.phase.p1{border-top-color:var(--red)}.phase.p2{border-top-color:#cf8a00}.phase.p3{border-top-color:var(--green)}.phase div{background:#fff7ed;border:1px solid #fed7aa;border-radius:6px;padding:7px;font-size:12px}.script-box{background:#fbf8ff;border:1px solid #e8d9ff;border-radius:8px;padding:12px;margin-top:9px}.script-box p{margin:7px 0}.empty{text-align:center;padding:44px;color:var(--muted)}
+@media(max-width:900px){body{padding:10px}.topbar{display:block}.stats{grid-template-columns:repeat(2,1fr);margin-top:12px}.two-col,.phase-grid{grid-template-columns:1fr}.client-head{display:block}.amount-box{text-align:left;margin-top:8px}}
+</style></head><body><main class="page">
+<header class="topbar"><div><h1>刘壮 · 2026-07-03 客户跟进方案</h1><p class="sub">销售日报仪表盘：客户跟进、消费诊断、实验体系、成交动作</p></div><div class="stats"><div class="stat"><span>客户数</span><b>6</b></div><div class="stat"><span>意向金额</span><b>¥25,600</b></div><div class="stat"><span>客单均值</span><b>¥4,267</b></div><div class="stat"><span>考核状态</span><b>达标</b></div></div></header>
+
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">河南农业大学 / 无信息</div>
+          <h2>张帆 · 张松涛</h2>
+          <p><span class="tag main">高通量产品</span><span class="risk risk-low">低风险</span><span class="tag level">T5</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥3,000</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>T5</strong></div>
+          <p><b>单位/学院/课题组：</b>河南农业大学 / 无信息 / 张松涛</p>
+          <div class="research-summary">公开研究方向或客户画像不足，先以CRM当日意向、既有消费结构和课题组名称推进，同时要求销售补全研究方向。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">### 调研报告：河南农业大学张松涛人员研究方向分析
+
+作为生物行业调研专家，我针对河南农业大学的张松涛人员进行了系统调研。调研基于以下权威来源：  
+- 河南农业大学官方网站（学院师资页面及科研动态）  
+- 中国知网（CNKI）学术论文数据库（检索张松涛近5年发表文献）  
+- Web of Science 及 PubMed 相关学术记录  
+- 河南省科技厅科研项目公示信息  
+
+经核实，河南农业大学生命科学学院确有一位**张松涛教授**（职称：教授，博士生导师），其研究聚焦于农业生物技术与植物保护领域。以下是详细调研结果：
+
+#### 1. **客户的研究方向总结**  
+张松涛教授的核心研究方向集中在**植物-微生物互作的分子机制与生物防治应用**。具体包括：  
+- 植物病原微生物（如真菌、细菌）与宿主植物的分子互作机理研究，重点解析病原菌致病基因和植物抗病基因的调控网络。  
+- 基于微生物资源的生物防治技术开发，利用拮抗微生物（如芽孢杆菌、木霉菌）创制绿色农药，减少化学农药依赖。  
+- 作物抗病育种应用，结合CRISPR-Cas9基因编辑技术，培育高抗病性小麦、玉米等主粮作物新品种。  
+- 环境胁迫下植物免疫响应的表观遗传调控，探索干旱、盐碱等逆境对植物-病原互作的影响。  
+其研究具有显著的应用导向，成果已转化至河南省农业产业化项目，例如在小麦赤霉病和玉米锈病的绿色防控中取得实效。
+
+#### 2. **关键词总结（填写在单元格内）**  
+基于文献分析（共检索到张松涛作为通讯作者的27篇核心期刊论文，其中SCI收录15篇），提炼出以下高频关键词。这些关键词反映了其研究的核心主题、技术和应用领域，按优先级排序填入单元格：  
+
+| 关键词类别 | 单元格内容 |
+|------------|------------|
+| **核心研究领域** | 植物病理学 |
+| **关键技术方法** | 分子互作机制 |
+| **应用方向** | 生物防治 |
+| **模型系统** | 作物抗病育种 |
+| **新兴趋势** | 基因编辑技术 |
+
+**说明**：  
+- 关键词提取自其代表性论文（如《Plant Disease》2022年发表的“Bacillus subtilis-mediated resistance against Fusarium graminearum in wheat”），确保高度相关性。  
+- 若需扩展分析，建议关注其近期主持的国家自然科学基金项目“小麦-赤霉菌互作中lncRNA调控网络研究”（项目编号：32172205）。  
+
+---  
+**调研结论**：信息有效，未出现“未搜索到相关信息”的情况。张松涛教授是河南省农业生物技术领域的活跃研究者，其工作对推动绿色农业具有实践价值。建议客户在合作中重点关注生物防治技术转化与基因编辑育种合作机会。</div></details>
+          <div class="tags"><span class="tag">我司可重点推广基因编辑</span><span class="tag">测序及微生物组分析服务</span><span class="tag">支持其作物抗病育种与致病机理研究。</span><span class="tag">CRISPR Cas9基因编辑服务</span><span class="tag">基因合成</span><span class="tag">高通量测序</span><span class="tag">gRNA设计</span><span class="tag">微生物组测序</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>今年消费结构分析</span><strong>2026合计 ¥538</strong></div>
+      <div class="consume-row"><span>sanger测序</span><div><i style="width:100%;background:#2457a6"></i></div><b>¥456</b></div><div class="consume-row"><span>普通引物</span><div><i style="width:18%;background:#1f7a4d"></i></div><b>¥82</b></div>
+      <div class="year-ref">2025全年参考：<b>¥1,708</b>；较2025下降 <b>¥1,170</b>。数据源：郑州基地课题组消费明细（2026.5月），按“课题组”字段匹配。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥538</td><td>低消费待扩品</td></tr>
+      <tr><td>主消费品类</td><td>sanger测序、普通引物</td><td>围绕高频品类做复购提醒</td></tr>
+      <tr><td>业务线缺口</td><td>质粒抽提、遗传转化类、修饰引物、项目</td><td>按课题实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：张松涛今年消费集中在sanger测序、普通引物，本次跟进要把当日意向和空白业务线连成可下单组合。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>样本设计</h4><p>确认物种、组织、重复数、分组</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>核酸/蛋白提取</h4><p>TsingZol、质控与样本保存</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>建库测序</h4><p>NGS二代；转录组默认BGI性价比更优</p><span>主推</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>生信分析</h4><p>差异分析、通路富集、图表交付</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>验证实验</h4><p>qPCR试剂、引物、Sanger验证</p><span>空白</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>后续扩展</h4><p>基因合成、载体构建、功能实验</p><span>扩品</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-07-03</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-07-03 至 2026-07-03</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-07-03 至 2026-07-03</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥3,000</strong></div><p>项目类型：<span class="tag main">高通量产品</span></p><div class="quote-block">跟进细菌重测序和ANI分析，目前报价1000元一个样品，一共是3个样品需要做。
+</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的高通量产品需求和张松涛的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">河南省科学院生物医学研究所 / 无信息</div>
+          <h2>程康 · 姬广聚</h2>
+          <p><span class="tag main">高通量产品</span><span class="risk risk-low">低风险</span><span class="tag level">T3</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥5,000</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>T3</strong></div>
+          <p><b>单位/学院/课题组：</b>河南省科学院生物医学研究所 / 无信息 / 姬广聚</p>
+          <div class="research-summary">公开研究方向或客户画像不足，先以CRM当日意向、既有消费结构和课题组名称推进，同时要求销售补全研究方向。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">### 调研报告：河南省科学院生物医学研究所姬广聚研究员
+
+作为生物行业调研专家，我对河南省科学院生物医学研究所的姬广聚研究员进行了专项调研。调研基于公开可查的学术数据库（如CNKI、PubMed、Web of Science）、机构官网信息（河南省科学院生物医学研究所官网及年报）、以及权威媒体报道（如《河南日报》、科技部相关项目公示）。调研时间范围为2020-2023年，确保信息时效性和可靠性。
+
+#### 客户（姬广聚研究员）研究方向生成
+姬广聚现任河南省科学院生物医学研究所所长、研究员，是河南省“中原千人计划”专家，在生物医学领域具有较高影响力。其研究方向聚焦于**干细胞与再生医学的转化应用**，核心内容包括：
+- **干细胞基础与应用研究**：重点探索诱导多能干细胞（iPSC）和成体干细胞的定向分化机制，尤其在肝脏细胞和胰岛β细胞再生方面的应用。他主导开发了基于干细胞的肝脏类器官培养技术，用于肝纤维化、肝硬化等疾病的体外模型构建和药物筛选。
+- **再生医学临床转化**：致力于将干细胞技术转化为临床治疗方案，例如针对终末期肝病的细胞移植疗法和糖尿病胰岛功能替代治疗。其团队在河南省内牵头多项临床前研究，涉及自体干细胞移植改善肝功能及胰岛素分泌。
+- **组织工程与生物材料**：结合生物材料支架（如水凝胶、3D打印支架），优化干细胞微环境，促进组织再生。研究涵盖肝脏组织工程和胰岛微囊化技术，以提高细胞存活率和治疗效果。
+- **疾病机制与靶向干预**：深入研究肝脏代谢性疾病（如非酒精性脂肪肝）和2型糖尿病的分子机制，利用干细胞模型筛选小分子干预靶点，推动精准医疗发展。
+
+该研究方向具有显著的产业转化潜力，已获国家自然科学基金、河南省重大科技专项等支持，并与郑州大学第一附属医院等机构合作开展临床试验。姬广聚团队近年发表SCI论文20余篇，核心成果集中在干细胞治疗肝脏和代谢性疾病领域。
+
+#### 关键词总结
+基于调研，提取姬广聚研究员研究方向的核心关键词，按优先级排序后填写在单元格内（以逗号分隔的标准化列表形式呈现）：
+
+| 字段 | 内容 |
+|------|------|
+| 研究方向关键词 | 干细胞, 再生医学, 组织工程, 肝脏再生, 糖尿病治疗 |
+
+**说明**：  
+- 关键词提炼自姬广聚近3年主持的科研项目（如“基于iPSC的肝脏类器官构建及肝病治疗应用”河南省科技攻关项目）、代表性论文（例如在《Stem Cell Research &amp; Therapy》发表的肝细胞再生研究），以及机构公开资料。  
+- 若需详细文献或项目清单，可提供进一步溯源支持。  
+- **本调研确认信息有效，未出现“未搜索到相关信息”情况**。</div></details>
+          <div class="tags"><span class="tag">基因合成服务</span><span class="tag">DNA测序服务</span><span class="tag">CRISPR基因编辑试剂盒</span><span class="tag">定制引物合成</span><span class="tag">细胞培养基与试剂</span><span class="tag">类器官培养试剂盒</span><span class="tag">生物信息学分析服务</span><span class="tag">小分子化合物筛选平台</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>今年消费结构分析</span><strong>2026合计 ¥6,963</strong></div>
+      <div class="consume-row"><span>基因</span><div><i style="width:100%;background:#2457a6"></i></div><b>¥3,611</b></div><div class="consume-row"><span>普通引物</span><div><i style="width:58%;background:#1f7a4d"></i></div><b>¥2,111</b></div><div class="consume-row"><span>sanger测序</span><div><i style="width:30%;background:#c7831c"></i></div><b>¥1,096</b></div><div class="consume-row"><span>Micro测序</span><div><i style="width:6%;background:#7a4e9d"></i></div><b>¥144</b></div>
+      <div class="year-ref">2025全年参考：<b>¥14,746</b>；较2025下降 <b>¥7,784</b>。数据源：郑州基地课题组消费明细（2026.5月），按“课题组”字段匹配。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥6,963</td><td>结构可扩张</td></tr>
+      <tr><td>主消费品类</td><td>基因、普通引物、sanger测序</td><td>围绕高频品类做复购提醒</td></tr>
+      <tr><td>业务线缺口</td><td>质粒抽提、遗传转化类、修饰引物、项目</td><td>按课题实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：姬广聚今年消费集中在基因、普通引物、sanger测序，本次跟进要把当日意向和空白业务线连成可下单组合。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>样本设计</h4><p>确认物种、组织、重复数、分组</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>核酸/蛋白提取</h4><p>TsingZol、质控与样本保存</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>建库测序</h4><p>NGS二代；转录组默认BGI性价比更优</p><span>主推</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>生信分析</h4><p>差异分析、通路富集、图表交付</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>验证实验</h4><p>qPCR试剂、引物、Sanger验证</p><span>空白</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>后续扩展</h4><p>基因合成、载体构建、功能实验</p><span>扩品</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-07-03</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-07-03 至 2026-07-03</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-07-03 至 2026-07-03</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥5,000</strong></div><p>项目类型：<span class="tag main">高通量产品</span></p><div class="quote-block">目前跟进转录组，样品今天没有处理好，需要1-2周内重新安排送测。
+</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的高通量产品需求和姬广聚的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">河南农业大学 / 生命科学技术学院/教授</div>
+          <h2>何建菊 · 吴建宇</h2>
+          <p><span class="tag main">高通量产品</span><span class="risk risk-low">低风险</span><span class="tag level">T3</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥10,000</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>T3</strong></div>
+          <p><b>单位/学院/课题组：</b>河南农业大学 / 生命科学技术学院/教授 / 吴建宇</p>
+          <div class="research-summary">公开研究方向或客户画像不足，先以CRM当日意向、既有消费结构和课题组名称推进，同时要求销售补全研究方向。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">作为生物行业调研专家，我基于公开可查的学术数据库（如中国知网、Web of Science、河南农业大学官网及科研项目平台）、机构档案和行业报告，对河南农业大学吴建宇人员进行了系统调研。调研过程包括检索其发表论文、科研项目、职务信息及学院公开资料（数据更新至2023年知识库截止点）。以下是调研结果：
+
+### 调研结论：
+- **研究方向**：吴建宇（河南农业大学农学院教授/研究员）的主要研究方向聚焦于**作物遗传育种与分子生物学应用**，具体涉及小麦等主要粮食作物的遗传改良、分子标记辅助选择、抗病（如条锈病、白粉病）及抗逆育种。其工作结合传统育种技术与现代生物技术（如基因组学和QTL定位），致力于培育高产、优质、抗逆新品种，服务于国家粮食安全战略。相关研究多依托河南省小麦遗传改良工程实验室，并参与国家自然科学基金及省级重点研发计划项目。
+  
+- **关键词总结**：基于其近5年核心论文（例如《作物学报》《Theoretical and Applied Genetics》等期刊发表）及项目内容，提炼出以下关键词。这些关键词反映了其研究的核心领域、技术方法和应用目标。
+
+### 单元格填写：
+| 字段 | 内容 |
+|------|------|
+| 研究方向关键词 | 小麦遗传育种, 分子标记辅助选择, 抗病育种, 作物基因组学, QTL定位, 高产优质品种培育 |
+
+### 说明：
+- **信息可靠性**：以上内容源自河南农业大学农学院官网师资介绍（2023年存档）、中国知网论文检索（关键词“吴建宇+河南农业大学”，共识别12篇相关文献，H指数5）及河南省科技厅项目公示（如“豫麦系列品种分子设计育种”项目）。研究方向描述基于其代表性论文（如《小麦抗条锈病基因Yr26的分子标记开发与应用》）综合得出。
+- **若需更新**：建议用户通过河南农业大学人事处（电话：0371-5655****）或学术数据库（如ResearchGate）获取最新动态。当前无信息矛盾或缺失报告。
+- **未搜索到相关信息？**：本次调研成功获取有效信息，故未使用该选项。如未来信息失效，可重新验证。</div></details>
+          <div class="tags"><span class="tag">|</span><span class="tag">基因分型检测</span><span class="tag">SNP芯片</span><span class="tag">QTL定位分析</span><span class="tag">分子标记开发</span><span class="tag">全基因组测序</span><span class="tag">引物合成</span><span class="tag">基因克隆服务 |</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>今年消费结构分析</span><strong>2026合计 ¥1,412</strong></div>
+      <div class="consume-row"><span>sanger测序</span><div><i style="width:100%;background:#2457a6"></i></div><b>¥848</b></div><div class="consume-row"><span>普通引物</span><div><i style="width:49%;background:#1f7a4d"></i></div><b>¥420</b></div><div class="consume-row"><span>Micro测序</span><div><i style="width:17%;background:#c7831c"></i></div><b>¥144</b></div>
+      <div class="year-ref">2025全年参考：<b>¥18,320</b>；较2025下降 <b>¥16,908</b>。数据源：郑州基地课题组消费明细（2026.5月），按“课题组”字段匹配。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥1,412</td><td>低消费待扩品</td></tr>
+      <tr><td>主消费品类</td><td>sanger测序、普通引物、Micro测序</td><td>围绕高频品类做复购提醒</td></tr>
+      <tr><td>业务线缺口</td><td>质粒抽提、遗传转化类、修饰引物、项目</td><td>按课题实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：吴建宇今年消费集中在sanger测序、普通引物、Micro测序，本次跟进要把当日意向和空白业务线连成可下单组合。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>样本设计</h4><p>确认物种、组织、重复数、分组</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>核酸/蛋白提取</h4><p>TsingZol、质控与样本保存</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>建库测序</h4><p>NGS二代；转录组默认BGI性价比更优</p><span>主推</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>生信分析</h4><p>差异分析、通路富集、图表交付</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>验证实验</h4><p>qPCR试剂、引物、Sanger验证</p><span>空白</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>后续扩展</h4><p>基因合成、载体构建、功能实验</p><span>扩品</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-07-03</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-07-03 至 2026-07-03</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-07-03 至 2026-07-03</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥10,000</strong></div><p>项目类型：<span class="tag main">高通量产品</span></p><div class="quote-block">沟通细菌的基因组和代谢组宏基因的联合分析，目前取样的范围暂时没法进行确定，已经拉群进行沟通。
+</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的高通量产品需求和吴建宇的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">河南农业大学 / 无信息</div>
+          <h2>周文峰 · 闫峰宾</h2>
+          <p><span class="tag main">基因合成</span><span class="risk risk-low">低风险</span><span class="tag level">T4</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥500</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>T4</strong></div>
+          <p><b>单位/学院/课题组：</b>河南农业大学 / 无信息 / 闫峰宾</p>
+          <div class="research-summary">公开研究方向或客户画像不足，先以CRM当日意向、既有消费结构和课题组名称推进，同时要求销售补全研究方向。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">作为生物行业调研专家，我已对河南农业大学闫峰宾人员进行了全面调研。调研过程包括：  
+- 检索河南农业大学官网教师名录、学院介绍（如农学院、生命科学学院、植物保护学院等）及公开师资信息。  
+- 查询中国知网（CNKI）、Web of Science、Google Scholar等学术数据库，以分析其发表论文、研究项目及合作网络。  
+- 参考河南省科技厅、国家自然科学基金委员会等官方项目公示，核实其承担的科研课题。  
+- 交叉验证行业报告、会议记录及媒体报道，确保信息准确性。  
+
+### 调研结果  
+经系统检索，**未找到与“闫峰宾”完全匹配的河南农业大学在编教师或研究人员信息**。具体原因如下：  
+1. **河南农业大学官网及学院师资页面**：  
+   - 在河南农业大学官网（[www.henau.edu.cn](http://www.henau.edu.cn)）的“师资队伍”栏目中，农学院、生命科学学院、植物保护学院等生物相关学院的教师名录（截至2023年10月数据）无“闫峰宾”记录。常见相似姓名包括“闫凤英”（植物保护学院教授，研究方向为植物病理学）或“闫会民”（动物科技学院教授），但无“闫峰宾”。  
+   - 校内搜索功能及教师简介页面均未返回相关结果。  
+
+2. **学术数据库检索**：  
+   - 在CNKI、Web of Science中以“Yan Fengbin”或“闫峰宾” + “河南农业大学”为关键词进行高级搜索，未发现署名单位为河南农业大学的论文、专利或项目。  
+   - 常见研究方向（如作物遗传育种、微生物工程、农业生物技术）的河南农大核心作者中，无此姓名匹配项。  
+
+3. **官方项目与行业记录**：  
+   - 河南省科技计划项目库（2020-2023年）及国家自然科学基金项目公示中，无“闫峰宾”作为主持人或参与者的记录。  
+   - 生物行业会议（如中国生物工程学会年会）及企业合作新闻中，亦未提及该人员。  
+
+4. **可能原因分析**：  
+   - 姓名可能存在拼写误差（如“闫凤宾”“闫峰斌”等），但基于标准拼音“Yan Fengbin”的检索仍无结果。  
+   - 该人员可能为短期访问学者、已离职人员或非全职研究人员，但公开信息中无存档。  
+   - 河南农业大学近年师资变动中，无相关公告。  
+
+### 输出结论  
+根据调研要求，因**未搜索到相关信息**，单元格内填写如下：  
+
+| 项目         | 内容                     |
+|--------------|--------------------------|
+| 研究方向     | 未搜索到相关信息         |
+| 关键词总结   | 未搜索到相关信息         |
+
+**说明**：  
+- 若需进一步验证，建议直接联系河南农业大学人事处（电话：+86-371-5655 2600）或相关学院办公室，提供更精确的姓名拼音或部门信息以缩小范围。  
+- 作为替代方案，河南农业大学生物领域知名研究人员包括：  
+  - **闫凤英**（植物保护学院）：研究方向为植物病原真菌学与绿色防控，关键词：植物病理学、生物防治、小麦赤霉病。  
+  - **陈彦惠**（农学院）：研究方向为玉米遗传育种，关键词：作物种质创新、分子标记辅助选择。  
+  但以上人员与“闫峰宾”无关联。  
+
+本次调研严格基于公开、权威渠道，确保客观性。如有新线索，可提供补充信息后重新调研。</div></details>
+          <div class="tags"><span class="tag">基因测序服务</span><span class="tag">基因合成服务</span><span class="tag">引物合成服务</span><span class="tag">CRISPR基因编辑服务</span><span class="tag">单细胞测序服务</span><span class="tag">空间转录组测序</span><span class="tag">蛋白质组学分析</span><span class="tag">代谢组学分析</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>今年消费结构分析</span><strong>2026合计 ¥2,112</strong></div>
+      <div class="consume-row"><span>普通引物</span><div><i style="width:100%;background:#2457a6"></i></div><b>¥1,200</b></div><div class="consume-row"><span>sanger测序</span><div><i style="width:76%;background:#1f7a4d"></i></div><b>¥912</b></div>
+      <div class="year-ref">2025全年参考：<b>¥9,745</b>；较2025下降 <b>¥7,632</b>。数据源：郑州基地课题组消费明细（2026.5月），按“课题组”字段匹配。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥2,112</td><td>低消费待扩品</td></tr>
+      <tr><td>主消费品类</td><td>普通引物、sanger测序</td><td>围绕高频品类做复购提醒</td></tr>
+      <tr><td>业务线缺口</td><td>质粒抽提、遗传转化类、修饰引物、项目</td><td>按课题实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：闫峰宾今年消费集中在普通引物、sanger测序，本次跟进要把当日意向和空白业务线连成可下单组合。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>序列确认</h4><p>CDS、酶切位点、突变与标签</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>载体选择</h4><p>原核pET；真核pcDNA3.1/pCMV；慢病毒pLenti/pCDH；保存才用pUC57</p><span>必查</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>合成周期</h4><p>常规约7-15个自然日，快速方案约5-7个自然日</p><span>承诺</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>功能构建</h4><p>慢病毒、shRNA/sgRNA按硬编码报价</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>细胞实验</h4><p>转染、稳转株、筛选与验证</p><span>扩品</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>验证交付</h4><p>测序确认、qPCR/WB验证</p><span>闭环</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-07-03</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-07-03 至 2026-07-03</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-07-03 至 2026-07-03</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥500</strong></div><p>项目类型：<span class="tag main">基因合成</span></p><div class="quote-block">目前咨询两个基因合成，还未发表格到邮箱，刚沟通完基因报价。
+</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的基因合成需求和闫峰宾的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">河南农业大学 / 无信息</div>
+          <h2>杨明宇 · 李转见</h2>
+          <p><span class="tag main">高通量产品</span><span class="risk risk-low">低风险</span><span class="tag level">T5</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥1,500</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>T5</strong></div>
+          <p><b>单位/学院/课题组：</b>河南农业大学 / 无信息 / 李转见</p>
+          <div class="research-summary">公开研究方向或客户画像不足，先以CRM当日意向、既有消费结构和课题组名称推进，同时要求销售补全研究方向。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">作为生物行业调研专家，我针对河南农业大学的“李转见”人员进行了系统调研。调研基于以下步骤：
+- **信息源核查**：检索河南农业大学官网（[www.henau.edu.cn](http://www.henau.edu.cn)）、中国知网（CNKI）、Web of Science、PubMed、国家自然科学基金委员会数据库，以及公开学术平台（如ResearchGate、Google Scholar）。
+- **关键词搜索**：使用“河南农业大学”、“李转见”、“Li Zhuanjian”（拼音近似）等组合进行多维度查询，覆盖2018-2023年期间的学术论文、科研项目、师资介绍及新闻报道。
+- **调研结论**：经全面检索，未找到与“李转见”完全匹配的河南农业大学在职或近期教职员工、研究人员或相关学术记录。该名称可能为：
+  - 拼写错误（例如，可能应为“李建见”、“李转健”或“李健”等常见姓名变体）。
+  - 非正式名称或已离职人员（河南农业大学师资库中无此记录）。
+  - 非生物相关领域人员（河南农业大学以农业科学为主，但生物行业聚焦生命科学、生物技术等领域）。
+
+根据用户要求，**未搜索到相关信息**，因此单元格内填写指定内容。调研过程严谨，确保无遗漏。
+
+### 调研结果汇总（按单元格格式填写）
+| 项目 | 内容 |
+|------|------|
+| 客户姓名 | 李转见 |
+| 所属机构 | 河南农业大学 |
+| 研究方向生成 | 未搜索到相关信息 |
+| 关键词总结 | 未搜索到相关信息 |
+
+**说明**：
+- **研究方向生成**：由于无法确认该人员的真实性及学术背景，无法生成具体研究方向。河南农业大学生物相关学院（如生命科学学院、农学院）的常见研究方向包括作物遗传育种、微生物资源利用、生物信息学等，但无法关联到“李转见”。
+- **关键词总结**：无有效信息可供提取关键词。
+- **建议**：若需进一步调研，请核实姓名准确性（例如检查是否为“李玉玲”（玉米育种专家）或“王泽霖”（禽病防控专家）等河南农业大学知名生物领域学者），并提供更详细线索（如学院、职称或研究领域）。</div></details>
+          <div class="tags"><span class="tag">未搜索到相关信息</span><span class="tag">DNA合成服务</span><span class="tag">基因合成服务</span><span class="tag">引物合成服务</span><span class="tag">高通量测序服务</span><span class="tag">分子克隆服务</span><span class="tag">CRISPR基因编辑服务</span><span class="tag">蛋白表达与纯化服务</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>今年消费结构分析</span><strong>2026合计 ¥13,815</strong></div>
+      <div class="consume-row"><span>基因</span><div><i style="width:100%;background:#2457a6"></i></div><b>¥12,280</b></div><div class="consume-row"><span>RNA</span><div><i style="width:6%;background:#1f7a4d"></i></div><b>¥752</b></div><div class="consume-row"><span>质粒抽提</span><div><i style="width:6%;background:#c7831c"></i></div><b>¥450</b></div><div class="consume-row"><span>普通引物</span><div><i style="width:6%;background:#7a4e9d"></i></div><b>¥301</b></div><div class="consume-row"><span>sanger测序</span><div><i style="width:6%;background:#b63b3b"></i></div><b>¥32</b></div>
+      <div class="year-ref">2025全年参考：<b>¥2,567</b>；较2025增长 <b>¥11,248</b>。数据源：郑州基地课题组消费明细（2026.5月），按“课题组”字段匹配。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥13,815</td><td>结构可扩张</td></tr>
+      <tr><td>主消费品类</td><td>基因、RNA、质粒抽提</td><td>围绕高频品类做复购提醒</td></tr>
+      <tr><td>业务线缺口</td><td>遗传转化类、修饰引物、项目、商城</td><td>按课题实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：李转见今年消费集中在基因、RNA、质粒抽提，本次跟进要把当日意向和空白业务线连成可下单组合。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>样本设计</h4><p>确认物种、组织、重复数、分组</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>核酸/蛋白提取</h4><p>TsingZol、质控与样本保存</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>建库测序</h4><p>NGS二代；转录组默认BGI性价比更优</p><span>主推</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>生信分析</h4><p>差异分析、通路富集、图表交付</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>验证实验</h4><p>qPCR试剂、引物、Sanger验证</p><span>空白</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>后续扩展</h4><p>基因合成、载体构建、功能实验</p><span>扩品</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-07-03</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-07-03 至 2026-07-03</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-07-03 至 2026-07-03</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥1,500</strong></div><p>项目类型：<span class="tag main">高通量产品</span></p><div class="quote-block">今天有150个样品要做，用于一代测序，目前正在提DNA，预计下午送，平时他们也有组学测序，用到了会联系我们报价。
+</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的高通量产品需求和李转见的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+    <section class="client-card">
+      <div class="client-head">
+        <div>
+          <div class="eyebrow">河南农业大学 / | 姓名 | 学院/职位 |
+|------|-----------|
+| 徐强 | 无信息 |
+| 卢云云 | 无信息 |
+| 陈昌 | 无信息 |
+| 解亘 | 无信息 |
+| 程双佳 | 无信息 |</div>
+          <h2>李佳美 · 寄生虫学</h2>
+          <p><span class="tag main">基因合成</span><span class="risk risk-low">低风险</span><span class="tag level">T3</span></p>
+        </div>
+        <div class="amount-box"><span>意向金额</span><strong>¥5,600</strong></div>
+      </div>
+      <div class="quick-action">今天先补齐样本、用途、预算、时间四个信息，再给客户具体方案。</div>
+      <div class="two-col">
+        <div class="panel">
+          <div class="section-title"><span>课题组深度研判</span><strong>T3</strong></div>
+          <p><b>单位/学院/课题组：</b>河南农业大学 / | 姓名 | 学院/职位 |
+|------|-----------|
+| 徐强 | 无信息 |
+| 卢云云 | 无信息 |
+| 陈昌 | 无信息 |
+| 解亘 | 无信息 |
+| 程双佳 | 无信息 | / 寄生虫学</p>
+          <div class="research-summary">公开研究方向或客户画像不足，先以CRM当日意向、既有消费结构和课题组名称推进，同时要求销售补全研究方向。</div>
+          <details><summary>查看研究方向原文</summary><div class="quote-block">### 河南农业大学寄生虫学人员调研报告
+
+作为生物行业调研专家，我对河南农业大学（Henan Agricultural University）的寄生虫学相关研究人员进行了系统调研。调研聚焦于该校动物医学院（College of Veterinary Medicine）的寄生虫学教研室及核心研究人员，主要依据公开学术资料、大学官网信息、科研论文数据库（如CNKI、PubMed）及行业报告（截至2023年知识库）。河南农业大学作为中国农业领域重点高校，其寄生虫学研究主要集中在兽医寄生虫学和人畜共患病方向，尤其在动物疫病防控领域具有较强实力。
+
+#### 调研结果总结
+- **主要调研对象**：河南农业大学动物医学院寄生虫学教研室的核心研究人员，包括宁长申教授（知名专家，博士生导师）等。该校寄生虫学团队以应用研究为主，服务于河南省及全国畜牧业发展。
+- **研究方向生成**：基于近5年（2019-2023）的科研项目、论文发表及行业合作，客户（即河南农业大学寄生虫学人员）的研究方向可概括为：**聚焦人畜共患寄生虫病的分子流行病学、快速诊断技术开发、新型疫苗与药物研发，以及寄生虫耐药性机制研究，重点针对畜禽（如猪、牛、羊）和伴侣动物的寄生虫病防控，结合分子生物学和生物信息学手段，推动绿色养殖和公共卫生安全**。
+- **关键词总结**：从研究方向中提取核心关键词，确保简洁、专业且覆盖主要领域。关键词基于高频术语在学术论文、项目申报书和行业报告中的出现率。
+
+#### 单元格填写
+| 项目 | 内容 |
+|------|------|
+| **研究方向** | 人畜共患寄生虫病的分子流行病学调查、快速诊断试剂盒开发、新型亚单位疫苗与中草药抗寄生虫药物研发、寄生虫耐药性机制及防控策略优化，重点针对弓形虫、隐孢子虫、球虫和血吸虫等病原体，服务于畜禽健康养殖和公共卫生安全。 |
+| **关键词** | 人畜共患寄生虫病, 分子诊断, 疫苗研发, 耐药性机制, 绿色防控 |
+
+### 说明
+- **信息可靠性**：本调研基于河南农业大学官网（[动物医学院师资介绍](http://vets.henau.edu.cn/szdw/jsml.htm)）、中国知网（CNKI）检索的100+篇相关论文（例如宁长申教授团队在《中国兽医学报》发表的“猪弓形虫病分子流行病学研究”），以及国家自然科学基金项目数据库（如项目编号32072850“隐孢子虫耐药基因编辑及疫苗设计”）。关键词经TF-IDF算法分析高频术语生成，确保代表性。
+- **未覆盖情况**：若需更详细人员名单（如张龙现教授等次要研究人员），因信息分散且非核心焦点，本调研以主导团队为准；所有内容均验证为有效，故**未填入“未搜索到相关信息”**。  
+- **建议**：客户可进一步联系河南农业大学动物医学院寄生虫学教研室（联系方式：0371-56990186），获取最新合作机会。</div></details>
+          <div class="tags"><span class="tag">需补全可推广产品</span></div>
+        </div>
+        <div class="panel">
+      <div class="section-title"><span>今年消费结构分析</span><strong>2026合计 ¥11,811</strong></div>
+      <div class="consume-row"><span>sanger测序</span><div><i style="width:100%;background:#2457a6"></i></div><b>¥7,424</b></div><div class="consume-row"><span>基因</span><div><i style="width:29%;background:#1f7a4d"></i></div><b>¥2,162</b></div><div class="consume-row"><span>Micro测序</span><div><i style="width:24%;background:#c7831c"></i></div><b>¥1,750</b></div><div class="consume-row"><span>普通引物</span><div><i style="width:6%;background:#7a4e9d"></i></div><b>¥475</b></div>
+      <div class="year-ref">2025全年参考：<b>¥10,172</b>；较2025增长 <b>¥1,639</b>。数据源：郑州基地课题组消费明细（2026.5月），按“课题组”字段匹配。</div>
+      <table class="gap-table"><tr><th>诊断项</th><th>当前状态</th><th>补齐动作</th></tr>
+      <tr><td>2026消费</td><td>¥11,811</td><td>结构可扩张</td></tr>
+      <tr><td>主消费品类</td><td>sanger测序、基因、Micro测序</td><td>围绕高频品类做复购提醒</td></tr>
+      <tr><td>业务线缺口</td><td>质粒抽提、遗传转化类、修饰引物、项目</td><td>按课题实验体系补测序、合成、试剂或验证服务</td></tr></table>
+      <div class="finding">关键发现：寄生虫学今年消费集中在sanger测序、基因、Micro测序，本次跟进要把当日意向和空白业务线连成可下单组合。</div>
+    </div>
+      </div>
+      <div class="panel">
+        <div class="section-title"><span>产品线逻辑闭环 · 实验体系</span><strong>客户科研流程</strong></div>
+        <div class="flow"><div class="flow-step"><em>1</em><h4>模板确认</h4><p>质粒全长/复杂模板/高GC先判断</p><span>进行中</span></div><div class="arrow">→</div><div class="flow-step"><em>2</em><h4>测序路径</h4><p>复杂质粒推Ultra；短片段仍推Sanger</p><span>主推</span></div><div class="arrow">→</div><div class="flow-step"><em>3</em><h4>收样要求</h4><p>Ultra浓度&gt;50ng/μL、体积≥20μL</p><span>必查</span></div><div class="arrow">→</div><div class="flow-step"><em>4</em><h4>交付节点</h4><p>质粒/PCR样品次日9:00；菌液按类型次日12:00或17:00</p><span>承诺</span></div><div class="arrow">→</div><div class="flow-step"><em>5</em><h4>结果解释</h4><p>全序列、无盲区、双峰拆分</p><span>可切入</span></div><div class="arrow">→</div><div class="flow-step"><em>6</em><h4>复购闭环</h4><p>引物、克隆试剂、质粒小提</p><span>扩品</span></div></div>
+      </div>
+      <div class="phase-grid">
+        <div class="phase p1"><h3>阶段一 · 2026-07-03</h3><p>确认样本、用途、预算和决策人，形成今日可执行清单。</p><div>待办提醒：补齐参数并写回CRM。</div></div>
+        <div class="phase p2"><h3>阶段二 · 2026-07-03 至 2026-07-03</h3><p>按实验体系输出产品组合：NGS默认BGI，复杂质粒推Ultra，常规短片段推Sanger。</p><div>待办提醒：报价前核对硬编码价格。</div></div>
+        <div class="phase p3"><h3>阶段三 · 2026-07-03 至 2026-07-03</h3><p>推动送样、下单、开票或合同，复盘空白业务线作为下次跟进主题。</p><div>待办提醒：确认成交节点和复购品类。</div></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="section-title"><span>当日意向分析</span><strong>¥5,600</strong></div><p>项目类型：<span class="tag main">基因合成</span></p><div class="quote-block">基因合成沟通，8000bp，暂时没有报价，要等老师发表到邮箱评估报价。
+</div></div>
+        <div class="panel"><div class="section-title"><span>成交风险预警</span><strong class="risk-low">低风险</strong></div><p>单点意向较清晰，适合用低阻力试单或基础产品推进。</p></div>
+      </div>
+      <div class="panel"><div class="section-title"><span>成交导向可执行方案</span><strong>决策树</strong></div><p>转录组/蛋白组/代谢组/宏基因组走NGS（默认BGI）；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra次日达；短片段验证推Sanger；基因合成后先问下游再选载体。Ultra测序：PCR样品次日9:00、质粒次日9:00、菌液（提质粒）次日17:00、菌液（PCR）次日12:00；基因合成常规约7-15个自然日，快速方案约5-7个自然日；NGS默认BGI，转录组/蛋白组/代谢组/宏基因组走NGS；质粒全长、复杂模板、双峰拆分或SNP分型推Ultra。</p></div>
+      <div class="script-box"><div class="section-title"><span>专业话术：5步逐字稿</span><strong>可直接照读</strong></div>
+        <p><b>【开场-唤回】</b>老师您好，我把您今天提到的基因合成需求和寄生虫学的研究方向合在一起看了一遍，想先帮您把最快能推进的路径确认清楚。</p>
+        <p><b>【需求确认】</b>这批样本主要是做发现性组学、验证性测序，还是后续功能实验？样本数、物种和送样时间您现在方便定一下吗？</p>
+        <p><b>【痛点切入/专业价值】</b>如果是转录组或宏基因组，我们按NGS方案走，BGI平台性价比更优；如果是质粒全长或复杂模板，Ultra无需引物、无盲区，质粒和PCR样品次日9点出结果。</p>
+        <p><b>【增推/试单】</b>建议先用当前最明确的一批样本试单，同时把后续qPCR、引物、基因合成或试剂需求一起规划，减少您反复确认参数的时间。</p>
+        <p><b>【促成交】</b>我今天把样本要求、交付时间和报价边界发您，价格不确定的地方我先向尤主管确认底价，再给您最终方案。</p>
+      </div>
+    </section>
+    
+</main></body></html>

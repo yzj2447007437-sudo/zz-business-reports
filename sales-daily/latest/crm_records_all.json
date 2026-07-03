@@ -1133,7 +1133,7 @@
         }
       ],
       "EV9Eu5P0r2": {
-        "markdown": "高通量测序报价![1adc3e26a0d41ccd899376d009f50744.png](https://alidocs2.oss-cn-zhangjiakou.aliyuncs.com/res/QvjnA3j9Zm573OXo/img/bf915173-897b-454b-8a70-5aad184b3b5c.png?Expires=1783009984&OSSAccessKeyId=LTAI5tKTjg4Kq1HCdBJ8qpSp&Signature=5bKvRSWHqRCZl2QIxtF3VIud6r8%3D)\n"
+        "markdown": "高通量测序报价![1adc3e26a0d41ccd899376d009f50744.png](https://alidocs2.oss-cn-zhangjiakou.aliyuncs.com/res/QvjnA3j9Zm573OXo/img/bf915173-897b-454b-8a70-5aad184b3b5c.png?Expires=1783096293&OSSAccessKeyId=LTAI5tKTjg4Kq1HCdBJ8qpSp&Signature=sAvmGbmrXg9UPvgaKQpwKb32CrQ%3D)\n"
       },
       "ErzrrTS": "427750",
       "H8m21AJ": {
@@ -2619,6 +2619,35 @@
       "pdb639c8ozcv0t5uqi5xh": "赵永平"
     },
     "recordId": "2BmNokUYl3"
+  },
+  {
+    "cells": {
+      "6fQN7MB": "2026-07-03T21:07:03+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "16255298572921921"
+        }
+      ],
+      "8Bxm6RV": [
+        {
+          "id": "9v98geBsLy",
+          "name": "高通量产品"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "跟进细菌重测序和ANI分析，目前报价1000元一个样品，一共是3个样品需要做。\n"
+      },
+      "ErzrrTS": "3000",
+      "H8m21AJ": {
+        "linkedRecordIds": [
+          "2FM9sQ1DW4"
+        ]
+      },
+      "ici3eUR": "烟草学院",
+      "pdb639c8ozcv0t5uqi5xh": "张帆"
+    },
+    "recordId": "2HObjvoNiw"
   },
   {
     "cells": {
@@ -4799,7 +4828,25 @@
     "recordId": "51gcuqLAmZ"
   },
   {
-    "cells": {},
+    "cells": {
+      "6fQN7MB": "2026-07-03T20:00:00+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "216932301824574583"
+        }
+      ],
+      "8Bxm6RV": [
+        {
+          "id": "9v98geBsLy",
+          "name": "高通量产品"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "跟进陈萌萌代谢组，老师说样品可能要到下周了\n"
+      },
+      "pdb639c8ozcv0t5uqi5xh": "陈萌萌"
+    },
     "recordId": "5361oFOQzK"
   },
   {
@@ -7843,6 +7890,35 @@
       "pdb639c8ozcv0t5uqi5xh": "许乘风"
     },
     "recordId": "8fFF7PXg7B"
+  },
+  {
+    "cells": {
+      "6fQN7MB": "2026-07-03T21:04:08+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "16255298572921921"
+        }
+      ],
+      "8Bxm6RV": [
+        {
+          "id": "9v98geBsLy",
+          "name": "高通量产品"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "目前跟进转录组，样品今天没有处理好，需要1-2周内重新安排送测。\n"
+      },
+      "ErzrrTS": "5000",
+      "H8m21AJ": {
+        "linkedRecordIds": [
+          "qTWdLCJrxQ"
+        ]
+      },
+      "ici3eUR": "河南省科学院",
+      "pdb639c8ozcv0t5uqi5xh": "程康"
+    },
+    "recordId": "8gHjdvtJ2E"
   },
   {
     "cells": {
@@ -11217,7 +11293,7 @@
         }
       ],
       "EV9Eu5P0r2": {
-        "markdown": "蛋白表达方案更改![2612291194cf8b7991519d905cfa3955.png](https://alidocs2.oss-cn-zhangjiakou.aliyuncs.com/res/QvjnA3j9Zm573OXo/img/82b8142b-b530-4d07-a448-ffe402ec8bfe.png?Expires=1783009992&OSSAccessKeyId=LTAI5tKTjg4Kq1HCdBJ8qpSp&Signature=1CYRh26N7yxpdat9ZbYyPWYKU44%3D)\n\n老师选择方案一，和技术老师沟通后说方案一不推荐，方案三更好一点，后续与老师沟通选择方案二，蛋白生产好后让老师先验证，验证没有效果按失败结单\n"
+        "markdown": "蛋白表达方案更改![2612291194cf8b7991519d905cfa3955.png](https://alidocs2.oss-cn-zhangjiakou.aliyuncs.com/res/QvjnA3j9Zm573OXo/img/82b8142b-b530-4d07-a448-ffe402ec8bfe.png?Expires=1783096299&OSSAccessKeyId=LTAI5tKTjg4Kq1HCdBJ8qpSp&Signature=vv7QMnhnJGuUuHDbwiv5BGcOeYo%3D)\n\n老师选择方案一，和技术老师沟通后说方案一不推荐，方案三更好一点，后续与老师沟通选择方案二，蛋白生产好后让老师先验证，验证没有效果按失败结单\n"
       },
       "ErzrrTS": "100",
       "H8m21AJ": {
@@ -16712,7 +16788,9 @@
     "recordId": "I9TDRLxZme"
   },
   {
-    "cells": {},
+    "cells": {
+      "6fQN7MB": "2026-07-03T22:14:00+08:00"
+    },
     "recordId": "IAJdfpwJ7U"
   },
   {
@@ -17834,6 +17912,35 @@
   },
   {
     "cells": {
+      "6fQN7MB": "2026-07-03T21:05:29+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "16255298572921921"
+        }
+      ],
+      "8Bxm6RV": [
+        {
+          "id": "9v98geBsLy",
+          "name": "高通量产品"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "沟通细菌的基因组和代谢组宏基因的联合分析，目前取样的范围暂时没法进行确定，已经拉群进行沟通。\n"
+      },
+      "ErzrrTS": "10000",
+      "H8m21AJ": {
+        "linkedRecordIds": [
+          "4IQu5996qp"
+        ]
+      },
+      "ici3eUR": "生命科学学院",
+      "pdb639c8ozcv0t5uqi5xh": "何建菊"
+    },
+    "recordId": "JiAEF37AWO"
+  },
+  {
+    "cells": {
       "6fQN7MB": "2026-06-04T22:23:18+08:00",
       "6skKX5X": [
         {
@@ -18642,6 +18749,35 @@
       "pdb639c8ozcv0t5uqi5xh": "李涛"
     },
     "recordId": "Kgl9eEyEnl"
+  },
+  {
+    "cells": {
+      "6fQN7MB": "2026-07-03T21:13:01+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "16255298572921921"
+        }
+      ],
+      "8Bxm6RV": [
+        {
+          "id": "BLy8S2ksaE",
+          "name": "基因合成"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "目前咨询两个基因合成，还未发表格到邮箱，刚沟通完基因报价。\n"
+      },
+      "ErzrrTS": "500",
+      "H8m21AJ": {
+        "linkedRecordIds": [
+          "UUeFbwAg7u"
+        ]
+      },
+      "ici3eUR": "动物科技学院",
+      "pdb639c8ozcv0t5uqi5xh": "周文峰"
+    },
+    "recordId": "KhcyqhbrZW"
   },
   {
     "cells": {
@@ -23801,7 +23937,7 @@
         }
       ],
       "EV9Eu5P0r2": {
-        "markdown": "![image.jpeg](https://alidocs2.oss-cn-zhangjiakou.aliyuncs.com/res/QvjnA3j9Zm573OXo/img/f32e098c-1f7b-452c-b58c-b6ecf0713e42.jpeg?Expires=1783009999&OSSAccessKeyId=LTAI5tKTjg4Kq1HCdBJ8qpSp&Signature=M1HySheIzoh7vv7sWBHq6GjJyNQ%3D)购买抗体\n"
+        "markdown": "![image.jpeg](https://alidocs2.oss-cn-zhangjiakou.aliyuncs.com/res/QvjnA3j9Zm573OXo/img/f32e098c-1f7b-452c-b58c-b6ecf0713e42.jpeg?Expires=1783096306&OSSAccessKeyId=LTAI5tKTjg4Kq1HCdBJ8qpSp&Signature=woJLT8rrUsXPSIG6f%2FoDA%2F68Pek%3D)购买抗体\n"
       },
       "ErzrrTS": "100",
       "H8m21AJ": {
@@ -26264,6 +26400,12 @@
   },
   {
     "cells": {
+      "6fQN7MB": "2026-07-03T22:13:00+08:00"
+    },
+    "recordId": "TYy1h22wOP"
+  },
+  {
+    "cells": {
       "6fQN7MB": "2026-04-21T13:58:45+08:00",
       "6skKX5X": [
         {
@@ -26410,6 +26552,35 @@
       "pdb639c8ozcv0t5uqi5xh": "代翔宇"
     },
     "recordId": "TcwxxaDZUw"
+  },
+  {
+    "cells": {
+      "6fQN7MB": "2026-07-03T21:10:50+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "16255298572921921"
+        }
+      ],
+      "8Bxm6RV": [
+        {
+          "id": "9v98geBsLy",
+          "name": "高通量产品"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "今天有150个样品要做，用于一代测序，目前正在提DNA，预计下午送，平时他们也有组学测序，用到了会联系我们报价。\n"
+      },
+      "ErzrrTS": "1500",
+      "H8m21AJ": {
+        "linkedRecordIds": [
+          "u8dojt7JW3"
+        ]
+      },
+      "ici3eUR": "动物科技学院",
+      "pdb639c8ozcv0t5uqi5xh": "杨明宇"
+    },
+    "recordId": "TiHeaVwPfY"
   },
   {
     "cells": {
@@ -28647,6 +28818,13 @@
   },
   {
     "cells": {
+      "6fQN7MB": "2026-07-03T22:14:00+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "216932301824574583"
+        }
+      ],
       "EV9Eu5P0r2": {
         "markdown": "转录组订单持续跟进，今天让老师先填单子，他说样品还需要时间\n"
       },
@@ -29787,6 +29965,13 @@
   },
   {
     "cells": {
+      "6fQN7MB": "2026-07-03T21:30:00+08:00",
+      "8Bxm6RV": []
+    },
+    "recordId": "XcVqYUGSId"
+  },
+  {
+    "cells": {
       "6fQN7MB": "2026-05-15T09:49:01+08:00",
       "6skKX5X": [
         {
@@ -30527,7 +30712,7 @@
         }
       ],
       "EV9Eu5P0r2": {
-        "markdown": "多肽序列SGIPYIISYLHPGNTILHVD![5c42df6ef36d720f7f2cc1980bea57f6.png](https://alidocs2.oss-cn-zhangjiakou.aliyuncs.com/res/QvjnA3j9Zm573OXo/img/7a32ea9f-a4da-46af-a417-2fdb8280fde8.png?Expires=1783010002&OSSAccessKeyId=LTAI5tKTjg4Kq1HCdBJ8qpSp&Signature=dWiZkwydZMA2NaglDfcXurblol4%3D)\n"
+        "markdown": "多肽序列SGIPYIISYLHPGNTILHVD![5c42df6ef36d720f7f2cc1980bea57f6.png](https://alidocs2.oss-cn-zhangjiakou.aliyuncs.com/res/QvjnA3j9Zm573OXo/img/7a32ea9f-a4da-46af-a417-2fdb8280fde8.png?Expires=1783096311&OSSAccessKeyId=LTAI5tKTjg4Kq1HCdBJ8qpSp&Signature=bOX3bjp9z%2F80ZhYrYNrbgjtSF7A%3D)\n"
       },
       "ErzrrTS": "100",
       "H8m21AJ": {
@@ -34340,6 +34525,35 @@
   },
   {
     "cells": {
+      "6fQN7MB": "2026-07-03T21:14:53+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "16255298572921921"
+        }
+      ],
+      "8Bxm6RV": [
+        {
+          "id": "BLy8S2ksaE",
+          "name": "基因合成"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "基因合成沟通，8000bp，暂时没有报价，要等老师发表到邮箱评估报价。\n"
+      },
+      "ErzrrTS": "5600",
+      "H8m21AJ": {
+        "linkedRecordIds": [
+          "qzF32m6IsG"
+        ]
+      },
+      "ici3eUR": "动物医学院",
+      "pdb639c8ozcv0t5uqi5xh": "李佳美"
+    },
+    "recordId": "cy84ImCZNs"
+  },
+  {
+    "cells": {
       "6fQN7MB": "2026-06-12T22:06:02+08:00",
       "6skKX5X": [
         {
@@ -34457,6 +34671,22 @@
       "pdb639c8ozcv0t5uqi5xh": "李鑫龙"
     },
     "recordId": "d507NXad7j"
+  },
+  {
+    "cells": {
+      "6fQN7MB": "2026-07-03T20:30:00+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "216932301824574583"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "理化订单检测跟进，他的订单和祝田田老师的，都面临着没有标准品的问题。\n"
+      },
+      "pdb639c8ozcv0t5uqi5xh": "李红英"
+    },
+    "recordId": "d7SBM0kGql"
   },
   {
     "cells": {
@@ -38213,6 +38443,17 @@
   },
   {
     "cells": {
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "216932301824574583"
+        }
+      ]
+    },
+    "recordId": "h4TcTaVTRs"
+  },
+  {
+    "cells": {
       "6fQN7MB": "2026-05-21T16:30:00+08:00",
       "6skKX5X": [
         {
@@ -41901,6 +42142,28 @@
       "pdb639c8ozcv0t5uqi5xh": "孔继红"
     },
     "recordId": "luqgqEmed4"
+  },
+  {
+    "cells": {
+      "6fQN7MB": "2026-07-03T20:30:00+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "216932301824574583"
+        }
+      ],
+      "8Bxm6RV": [
+        {
+          "id": "ys56oa05Nh",
+          "name": "分子项目"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "7月活动推广，领养，沟通可以做些预付款，下周一给他开张发票\n"
+      },
+      "pdb639c8ozcv0t5uqi5xh": "谷超凡"
+    },
+    "recordId": "lvRUnA6W1b"
   },
   {
     "cells": {
@@ -47313,6 +47576,28 @@
   },
   {
     "cells": {
+      "6fQN7MB": "2026-07-03T20:00:00+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "216932301824574583"
+        }
+      ],
+      "8Bxm6RV": [
+        {
+          "id": "BLy8S2ksaE",
+          "name": "基因合成"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "师大水产学院的，老师咨询引物，跟他推广基因合成，沟通预付款\n"
+      },
+      "pdb639c8ozcv0t5uqi5xh": "李秀秀"
+    },
+    "recordId": "s8btrrya9V"
+  },
+  {
+    "cells": {
       "6fQN7MB": "2026-03-02T00:00:00+08:00",
       "6skKX5X": [
         {
@@ -50957,6 +51242,28 @@
   },
   {
     "cells": {
+      "6fQN7MB": "2026-07-03T20:00:00+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "216932301824574583"
+        }
+      ],
+      "8Bxm6RV": [
+        {
+          "id": "BLy8S2ksaE",
+          "name": "基因合成"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "有两个基因要合成，后面才会做，沟通让他先做预付\n"
+      },
+      "pdb639c8ozcv0t5uqi5xh": "陈亦斌"
+    },
+    "recordId": "whFCzqoUNO"
+  },
+  {
+    "cells": {
       "6fQN7MB": "2026-06-12T14:28:46+08:00",
       "6skKX5X": [
         {
@@ -53498,7 +53805,25 @@
     "recordId": "zMzzhrfEB2"
   },
   {
-    "cells": {},
+    "cells": {
+      "6fQN7MB": "2026-07-03T18:00:00+08:00",
+      "6skKX5X": [
+        {
+          "corpId": "ding2da3934cef5290fc35c2f4657eb6378f",
+          "userId": "216932301824574583"
+        }
+      ],
+      "8Bxm6RV": [
+        {
+          "id": "WLduEAxfdS",
+          "name": "基因调控"
+        }
+      ],
+      "EV9Eu5P0r2": {
+        "markdown": "稳转株构建，报价12500，沟通账期；老师说可能要三个月，沟通做预付款。\n"
+      },
+      "pdb639c8ozcv0t5uqi5xh": "周园"
+    },
     "recordId": "zOseCMvD4P"
   },
   {
